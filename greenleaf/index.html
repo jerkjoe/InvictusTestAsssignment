@@ -10,21 +10,47 @@
 
 <body class="main">
     <style>
-        .main>* {
+        @font-face {
+            font-family: "nirmala";
+            src: url("./Nirmala.ttf");
+        }
+
+        @font-face {
+            font-family: "nirmala bold";
+            src: url("./NirmalaB.ttf");
+        }
+
+        @font-face {
+            font-family: "nirmala light";
+            src: url("./NirmalaS.ttf");
+        }
+
+        * {
             padding: 0;
             margin: 0;
+            line-height: 1.4;
+            font-family: "nirmala"
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'nirmala bold';
         }
 
         body {
             margin: 0;
         }
 
-        .masthead-img {
+        .masthead-logo {
             position: relative;
             width: 100%;
             height: 65vh;
             max-height: 500px;
-            background-image: url('./blur-cannabis-close-up-606506-min.jpg');
+            background-image: url('./image6.jpg');
             background-size: 100% 100%;
             background-repeat: no-repeat;
         }
@@ -33,29 +59,1101 @@
             width: 100%;
         }
 
-        .masthead-img>.image-wrapper {
+        .masthead-logo>.image-wrapper {
             position: absolute;
             right: 5%;
             top: 15%;
             max-width: 300px;
         }
+
         .masthead-content {
             position: relative;
         }
+
+        .gray-area {
+            width: 100%;
+            height: 40px;
+            background-color: #2B2C2E;
+        }
+
+        .greenblock {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            top: -60px;
+            left: 10%;
+        }
+
+        .greenblock>.image-wrapper {
+            padding: 2%;
+            width: 13%;
+            box-sizing: border-box;
+            background-image: linear-gradient(to right, #003826 0%, #0a5937 100%);
+            display: flex;
+            align-items: center;
+        }
+
+        .flex p>strong {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+
+        .greenblock>.title {
+            font-family: 'nirmala bold';
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+            flex: 1;
+            color: #fff;
+            font-size: 36px;
+            line-height: 54px;
+            padding: 20px 40px;
+            background-image: linear-gradient(to right, #003826 0%, #0a5937 100%);
+            box-sizing: border-box;
+        }
+
+        .greenblock>.title>p>span {
+            color: #61B146;
+            font-size: 40px;
+        }
+
+        .things {
+            text-align: center;
+            font-size: 32px;
+            padding: 40px 20%;
+            font-weight: bold;
+        }
+
+        .things>span {
+            color: #61B146;
+        }
+
+        span {
+            color: #61B146
+        }
+
+        .learn {
+            background-color: #2B2C2E;
+            padding: 20px 60px;
+            text-align: center;
+            color: #fff;
+            font-weight: bold;
+            position: relative;
+        }
+
+        .learn::before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: calc(50% - 60px);
+            top: -40px;
+            background-color: #fff;
+            border-width: 20px 60px;
+            border-color: transparent;
+            border-style: solid;
+            border-bottom-color: #2B2C2E;
+        }
+
+        .learn>p {
+            padding: 40px;
+            font-size: 32px;
+        }
+
+        .whiteblock {
+            height: 80%;
+            position: absolute;
+            left: 0;
+            top: 10%;
+            background-color: #fff;
+            ;
+            width: 20px;
+        }
     </style>
     <div class="masthead">
-        <div class="masthead-img">
+        <div class="gray-area"></div>
+        <div class="masthead-logo">
             <div class="image-wrapper">
                 <img src="./Asset4.png" alt="">
             </div>
         </div>
         <div class="masthead-content">
             <div class="greenblock">
-            
+                <div class="image-wrapper">
+                    <img src="./Asset7.svg" alt="">
+                </div>
+                <div class="title">
+                    <p>
+                        IPO SEES <span>402%</span> SHARE VALUE
+                        INCREASE IN JUST <span>60 DAYS!</span>
+                    </p>
+                </div>
+            </div>
+            <div class="things">
+                TODAY DISCOVER THE <span>8 THINGS</span> YOU
+                NEED TO KNOW BEFORE YOU JUMP IN!
+            </div>
+            <div class="learn">
+                <div class="whiteblock">
+
+                </div>
+                <p>
+                    <span>LEARN HOW TO</span> “GET OFF THE SIDELINES AND GET
+                    INTO THE MOST EXCITING AND <span>
+                        EXPLOSIVE MARKET
+                        PARADIGM SHIFT IN ALMOST 80 YEARS!”
+                    </span>
+                </p>
             </div>
         </div>
     </div>
 
+
+    <!-- prompt -->
+    <style>
+        .prompt {
+            background-color: #2B2C2E;
+            color: #fff;
+            margin-top: 20px;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .prompt>.content {
+            width: 60%;
+        }
+
+        .prompt>.image-wrapper {
+            padding-top: 40px;
+            width: 30%;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .prompt>.image-wrapper>img {}
+
+        .prompt>.content>h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .prompt>.content>h2:last-child {
+            margin-top: 20px;
+        }
+
+        .prompt>.content>h3 {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+
+        .prompt>.content>p {
+            margin-bottom: 10px;
+        }
+    </style>
+    <div class="prompt">
+        <div class="content">
+            <h2>
+                ARE YOU WATCHING <span>INSTEAD OF PROFITING?</span>
+            </h2>
+            <p>
+                Penny stock investors see explosive small cap stock rallies happen almost daily.
+            </p>
+            <p>
+                Many believe the Legal & Medical Marijuana Industry is the next Big BOOM
+                Sector.
+            </p>
+            <p>
+                And it may have only just begun!
+            </p>
+            <h3>
+                <span>NO DOUBT:</span> THESE ARE HISTORIC TIMES
+            </h3>
+            <p>
+                If you think you missed the boat… weʼre here to tell you to think again!
+            </p>
+            <p>
+                The Cannabis Sector is still in its infancy and poised for RAPID GROWTH.
+            </p>
+            <p>
+                In fact, most of these stocks are still trading for just PENNIES PER SHARE.
+            </p>
+            <h2>
+                <span>
+                    THIS MAY NEVER HAPPEN AGAIN
+                </span>
+            </h2>
+        </div>
+
+        <div class="image-wrapper">
+            <img src="./Asset10.png" alt="">
+        </div>
+
+    </div>
+    <style>
+        .halfhalf {
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .halfhalf>* {
+            width: 50%;
+        }
+
+        .halfhalf>.text {
+            display: flex;
+            align-items: center;
+        }
+
+        .halfhalf>.text>h2 {
+            width: 80%;
+            margin-left: 70px;
+            position: relative;
+        }
+
+        .halfhalf>.text>h2::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -20px;
+            height: 100%;
+            width: 10px;
+            background-color: #61B146;
+        }
+
+        .top-triangle {
+            position: absolute;
+            width: 0%;
+            height: 0;
+            top: 0;
+            left: 0;
+            border-width: 40px 50vw;
+            border-color: #2B2C2E;
+            border-style: solid;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+        }
+
+        .bottom-triangle {
+            position: absolute;
+            width: 0%;
+            height: 0;
+            bottom: 0;
+            left: 0;
+            border-width: 40px 50vw;
+            border-color: #0a5937;
+            border-style: solid;
+            border-top-color: transparent;
+            border-right-color: transparent;
+        }
+
+        .otc {
+            display: flex;
+            background-image: linear-gradient(to top, #003826 0%, #0a5937 100%);
+            color: #fff;
+        }
+
+        .otc>.left {
+            width: 55%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px 10% 40px;
+        }
+
+        .otc>.right {
+            width: 40%;
+        }
+
+        .otc>.left>.image-wrapper {
+            width: 25%;
+            margin-bottom: 40px;
+        }
+
+        .otc .content>h3,
+        .otc .content>p {
+            margin-bottom: 20px;
+        }
+
+        .otc .content>h3 {
+            font-weight: bold;
+        }
+    </style>
+    <div class="halfhalf">
+        <div class="top-triangle">
+
+        </div>
+        <div class="image-wrapper">
+            <img src="./Image2.jpg" alt="">
+        </div>
+        <div class="text">
+            <h2>
+                THIS REALLY MAY TRULY
+                BE A ONCE-IN-A-LIFETIME
+                OPPORTUNITY
+            </h2>
+        </div>
+        <div class="bottom-triangle">
+
+        </div>
+    </div>
+    <div class="otc">
+        <div class="left">
+            <div class="image-wrapper">
+                <img src="./Asset11.svg" alt="">
+            </div>
+            <div class="content">
+                <h3>
+                    IMAGINE BUYING ANHEUSER BUSCH STOCK IN 1930
+                    BEFORE PROHIBITION WAS REPEALED!
+                </h3>
+                <p>
+                    There will NEVER be another Banned Substance made legal on
+                    this scale – potentially creating a future TRILLION Dollar Global
+                    Market.
+                </p>
+                <p>
+                    This is the type of situation that could turn Cannabis stocks into
+                    Powerful Billion-Dollar Corporations — seemingly overnight!
+                </p>
+                <h3>
+                    <div style="display: inline-block;width: 20px;" class="image-wrapper">
+                        <img src="./Asset13.svg" alt="">
+                    </div>
+                    JUST LOOK AT CHEMESIS (CSE: CSI / OTC: CADMF.)
+                </h3>
+            </div>
+        </div>
+    </div>
+    <style>
+        .history {
+            margin-top: 40px;
+        }
+
+        .history>.head {
+            margin-left: 50px;
+            padding: 20px 40px;
+            position: relative;
+            background-color: #61B146;
+        }
+
+        .history>.head::before {
+            content: '';
+            display: block;
+            width: 30px;
+            height: 100%;
+            position: absolute;
+            left: -50px;
+            top: 0;
+            background-color: #2A5E39;
+        }
+
+        .history>.head>p {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .white {
+            color: #ffffff;
+        }
+
+        .history>.content {
+            padding: 20px 90px;
+        }
+
+        .history>.content>p {
+            margin-bottom: 10px;
+        }
+
+        .history>.content>h2 {
+            margin-bottom: 20px;
+        }
+
+        .why {
+            background-color: #2B2C2E;
+            color: #fff;
+            padding: 20px;
+            font-size: 32px;
+        }
+    </style>
+    <div class="history">
+        <div class="head">
+            <p>
+                IN A RECENT 60-DAY PERIOD, THIS STOCK ROSE 402%!
+            </p>
+            <p class="white">JUST THINK: A $1,000 INVESTMENT TURNED INTO A $5,000.00
+                JACKPOT IN JUST 2 MONTHS!</p>
+        </div>
+        <div class="content">
+            <h2>
+                <span>YOUNG INVESTORS </span> – ESPECIALLY MEN – LOVE CANNABIS STOCKS!
+            </h2>
+            <p>
+                Companies like Chemesis (CSE: CSI / OTC: CADMF) are the preferred small cap stock for investors aged
+                between 22 and 37.
+
+            </p>
+
+            <p>
+                Millennials – born between 1981 and 1996 – account for about 75% of the cannabis-related securities
+                trades over the past months,
+                according to data from TD Ameritrade.
+            </p>
+            <h2>
+                THIS CROWD ALSO TRADES MORE ACTIVELY -- ABOUT 25% MORE
+                THAN OTHER GROUPS.
+            </h2>
+        </div>
+        <h2 class="why">
+            WHY?
+        </h2>
+        <div class="content">
+            <p>
+                Because they see the potential – they know that demand for the product is growing by leaps and
+                bounds, and that governments around
+                the world are easing restrictions on marijuana products, both for medicinal and recreational use
+            </p>
+            <h2>
+                AND THAT IS MUSIC TO THE EARS (AND POCKETBOOKS) OF
+                INVESTORS IN CHEMESIS (CSE: CSI / OTC: CADMF.)
+            </h2>
+        </div>
+
+    </div>
+    <style>
+        .header-title {
+            background-color: #2A5E39;
+            width: 92%;
+            box-sizing: border-box;
+            color: #ffffff;
+            font-size: 32px;
+            padding: 20px 90px;
+            margin-bottom: 20px;
+            box-shadow: 10px 10px 30px 0 #666666;
+        }
+
+        .shape-image {
+            margin-top: 40px;
+            position: relative;
+            font-size: 0;
+        }
+
+        img.round-arrow {
+            position: absolute;
+            width: 140px;
+            left: 5%;
+            bottom: -1px;
+        }
+
+        .important-thing:nth-child(3) {
+            margin-top: -10%;
+        }
+
+        .important-thing:nth-child(3)>.content>h2 {
+            padding: 40px 30% 0px 0;
+        }
+
+        .important-thing {
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .important-thing>.content {
+            flex: 1;
+            padding-left: 40px;
+            padding-right: 60px;
+        }
+
+        .important-thing>.image-wrapper {
+            padding-left: 10px;
+            max-width: 120px;
+        }
+
+        .important-thing>.content h2 {
+            padding-top: 40px;
+            margin-bottom: 20px;
+            font-size: 36px;
+        }
+
+        .dark-green {
+            background-color: #0a5736;
+        }
+
+        .dark-green>.content {
+            color: #fff;
+        }
+
+        img.top-right {
+            top: -55px;
+            left: 85%;
+        }
+
+        .light-green {
+            background-color: #63b044;
+        }
+
+        .light-green>.content {
+            color: #ffffff;
+        }
+
+        .important-thing>.content h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .important-thing>.content p {
+            margin-bottom: 10px;
+        }
+
+        .important-thing>.flex {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .important-thing>.flex>.image-wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        .content b {
+            font-size: 24px;
+        }
+    </style>
+    <div class="important-things">
+
+        <div class="header-title">
+            <span>HERE ARE THE</span> 8 MOST IMPORTANT THINGS TO KNOW<br>
+            <span>BEFORE YOU DECIDE TO ADD CHEMESIS TO YOUR PORTFOLIO!</span>
+        </div>
+        <div class="shape-image">
+            <img src="./Shape-Image-1.png" alt="">
+        </div>
+        <div class="important-thing">
+            <div class="image-wrapper">
+                <img src="./Asset31.svg" alt="">
+            </div>
+            <div class="content">
+                <h2>
+                    <span>
+                        THE PUBLIC SUPPORTS LEGALIZING
+                        ADULT-USE CANNABIS PRODUCTS
+                    </span>
+                </h2>
+                <p>
+                    As many as <b>64% OF AMERICAN ADULTS</b> surveyed (1) support legalization of recreational use. 93%
+                    support the use of
+                    medical cannabis products.
+                </p>
+                <p>
+                    Chemesis (CSE: CSI / OTC: CADMF) understands that factor is driving the cannabis investor market
+                    and sees the wave and
+                    plans to ride it for the long-term.
+                </p>
+            </div>
+        </div>
+        <div class="shape-image">
+            <img src="./Image5.jpg" alt="">
+            <img class="round-arrow" src="./roundedarrow1.svg" alt="">
+        </div>
+
+        <div class="important-thing dark-green">
+            <div class="image-wrapper">
+                <img src="./Asset30.svg" alt="">
+            </div>
+            <div class="content">
+                <h2>
+                    <span>29 STATES HAVE BROAD</span>-SWEEPING MEDICAL
+                    CANNABIS <span>LAWS SINCE 1996, 29 STATES PASSED
+                        BROAD-SWEEPING MEDICAL POT LAWS.</span>
+                </h2>
+            </div>
+        </div>
+        <div class="important-thing light-green">
+            <img class="round-arrow top-right" src="./roundedarrow2.svg" alt="">
+            <div class="image-wrapper">
+                <img src="./Asset29.svg" alt="">
+            </div>
+            <div class="content flex">
+                <div class="text">
+                    <h2>
+                        CANADA LEGALIZED RECREATIONAL CANNABIS
+                    </h2>
+                    <p>
+                        That is why Chemesis (CSE: CSI / OTC: CADMF) has specific plans in place for operational
+                        expansion throughout Europe, South America and into Oceania.
+                    </p>
+                    <p>
+                        That is why Chemesis (CSE: CSI / OTC: CADMF) has specific plans in place for operational
+                        expansion throughout Europe, South America and into Oceania.
+                    </p>
+                    <p>
+                        <strong>
+                            AND INVESTORS LIKE A COMPANY – LIKE CHEMESIS – WITH GLOBAL VISION.
+                        </strong>
+                    </p>
+                    <h3>
+                        THAT IS POSSIBLY ANOTHER REASON THE STOCK
+                        ROSE 402% IN JUST 2 MONTHS!
+                    </h3>
+                </div>
+                <div class="image-wrapper">
+                    <img src="./Asset16.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="signup"></div>
+
+
+        <div class="important-thing">
+            <div class="image-wrapper">
+                <img src="./Asset28.svg" alt="">
+            </div>
+            <div class="content">
+                <h2>
+                    OILS AND EXTRACTS ARE A HIGHER-MARGIN
+                    PRODUCT
+                </h2>
+                <h3>
+                    <span>PRODUCT VARIETY IS IMPORTANT FOR MARIJUANA STOCKS.</span>
+                </h3>
+                <p>
+                    Moving beyond highly commoditized dried cannabis products is critical to success. .
+                </p>
+                <p>
+                    Companies like Chemesis (CSE: CSI / OTC: CADMF) that offer retail cannabis oils and extracts stand
+                    to generate juicier margins
+                    than those that don't. Oils and extracts have a significantly higher price point and target niche
+                    consumers. They are the secret sauce
+                    to increasing margins.
+                </p>
+            </div>
+        </div>
+        <style>
+            .quote {
+                height: 35vh;
+                width: 100%;
+                max-height: 400px;
+                background-image: url('./image3.jpg');
+                background-size: cover;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            .quote-block {
+                background-color: rgba(255, 255, 255, .4);
+                font-size: 24px;
+                width: 60%;
+                max-width: 800px;
+                padding: 20px 10%;
+                position: relative;
+            }
+
+            img.quotation {
+                width: 50px;
+            }
+        </style>
+        <div class="quote">
+            <div class="quote-block">
+
+                <h2>
+                    <img class="quotation" src="./Asset19.svg" alt="">
+                    OILS AND EXTRACTS HAVE A
+                    SIGNIFICANTLY HIGHER PRICE
+                    POINT AND TARGET NICHE
+                    CONSUMERS.
+                    <img class="quotation" src="./Asset19.svg" alt="">
+                </h2>
+            </div>
+        </div>
+
+
+        <div class="important-thing">
+            <div class="image-wrapper">
+                <img src="./Asset27.svg" alt="">
+            </div>
+            <div class="content">
+                <h2>
+                    <span>DONʼT FOCUS ON THE LARGEST COMPANIES</span>
+                </h2>
+                <h3>
+                    THE CANNABIS SECTOR IS LOADED WITH COMPANIES WITH MARKET
+                    CAPITALIZATIONS OF LESS THAN <span>
+                        $250 MILLION AND $50 MILLION.
+                    </span>
+                </h3>
+                <h3>
+                    YOUNG COMPANIES – LIKE CHEMESIS (CSE: CSI / OTC: CADMF) – OFFER
+                    TREMENDOUS GROWTH POTENTIAL.
+                </h3>
+                <p>
+                    To benefit investors, they use dynamic leadership and “close to the consumer” atmosphere to react
+                    quickly and effectively to an
+                    ever-changing marketplace.
+                </p>
+            </div>
+        </div>
+        <style>
+            .green-text-block {
+                width: 60%;
+                font-size: 32px;
+                position: absolute;
+                bottom: 15%;
+                background-color: #0a5736;
+                color: #63b044;
+                padding: 20px 10%;
+            }
+
+            .bottom-right {}
+
+            .gray {
+                background-color: #e3e3e3;
+                margin: 20px auto;
+            }
+        </style>
+        <div class="shape-image">
+
+            <img src="./Image4.jpg" alt="">
+            <div class="green-text-block">
+                THE REAL OPPORTUNITIES IN CANNABIS – LIKE CHEMESIS
+                (CSE: CSI / OTC: CADMF) – UNFOLD OVER THE LONG RUN.
+            </div>
+        </div>
+
+        <div class="important-thing gray">
+            <div class="image-wrapper">
+                <img src="./Asset26.svg" alt="">
+            </div>
+            <div class="content">
+                <h2>
+                    <span>FOCUS ON THE LONG RUN</span>
+                </h2>
+
+                <p>
+                    The cannabis sector, like many consumer-based industries, is prone to extreme bouts of volatility.
+                    Don’t worry about this volatility
+                    too much and let it distract you from the big picture.
+                </p>
+                <h3>
+                    THE REAL OPPORTUNITIES IN CANNABIS – LIKE CHEMESIS (CSE: CSI / OTC:
+                    CADMF) – UNFOLD OVER THE LONG RUN.
+                </h3>
+            </div>
+        </div>
+        <style>
+            .dark-green>.yellow-green {
+                color: #97B79C;
+            }
+            .dark-green>.yellow-green > h2{
+                color: #fff;
+            }
+        </style>
+        <div class="important-thing dark-green">
+            <div class="image-wrapper">
+                <img src="./Asset25.svg" alt="">
+            </div>
+            <div class="content yellow-green">
+                <h2>
+                    DON'T SWEAT VALUATION
+                </h2>
+                <h3>
+                    EXPECTATIONS FOR CANNABIS STOCKS ARE RUNNING HIGH. INVESTORS ARE
+                    VERY EXCITED ABOUT THIS OPPORTUNITY.
+                </h3>
+                <p>
+                    Some of the most popular cannabis stocks have valuations that look absurd compared to the S&P 500.
+                    Some experts bash these
+                    valuations as unsustainable. Don't let this criticism prevent you from seeing the big picture
+                    opportunity.
+                </p>
+                <h3>
+                    THATʼS ANOTHER REASON WHY CHEMESIS (CSE: CSI / OTC: CADMF) IS A
+                    MUST-ADD TO YOUR WATCH LIST.
+                </h3>
+            </div>
+        </div>
+        <div class="shape-image no-margin">
+            <img src="./Image6.jpg" alt="">
+            <style>
+                .no-margin {
+                    margin: 0;
+                }
+
+                .green-textblock {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 45%;
+                    color: #fff;
+                    position: absolute;
+                    bottom: -50px;
+                    right: 10%;
+                }
+
+                .year {
+                    font-size: 28px;
+                    display: flex;
+                    align-items: center;
+                    background-color: #0a5736;
+                    padding: 20px;
+                    color:#63b044;
+                    font-family: 'nirmala bold';
+                }
+
+                .desc {
+                    padding: 24px 60px;
+                    font-size: 24px;
+                    background-color: #0a5736;
+                    margin-left: 20px;
+                    font-family: 'nirmala bold';
+                }
+                .desc > * {
+                    font-family: 'nirmala bold';
+                }
+                .desc>b {
+                    
+                    color: #97B79C;
+                }
+            </style>
+            <div class="green-textblock">
+                <div class="year">
+                    2016
+                </div>
+                <div class="desc">
+                    CANNABIS SALES <b>IN THE UNITED STATES
+                            INCREASED</b> 30% FROM 2015 TO REACH
+                    <span>$6.7 BILLION.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="important-thing">
+            <div class="image-wrapper">
+                <img src="./Asset24.svg" alt="">
+            </div>
+            <div class="content">
+                <h2>
+                    GO INTERNATIONAL
+                </h2>
+                <h3>
+                    <span>SOME OF THE BEST OPPORTUNITIES IN CANNABIS ARE
+                        HAPPENING OUTSIDE THE UNITED STATES. </span>
+                </h3>
+                <p>
+                    Some of the most popular cannabis stocks have valuations that look absurd compared to the S&P 500.
+                    Some experts bash these
+                    valuations as unsustainable. Don't let this criticism prevent you from seeing the big picture
+                    opportunity.
+                </p>
+                <h4>
+                    LEGAL CANNABIS IS THE FASTEST GROWING INDUSTRY IN NORTH AMERICA.
+                </h4>
+                <h3>
+                    <span>
+                        IN 2016, CANNABIS SALES IN THE UNITED STATES INCREASED
+                        30% FROM 2015 TO REACH $6.7 BILLION.
+                    </span>
+                </h3>
+                <p>
+                    And looking forward -- with more states, Canada and countries around the globe moving toward
+                    legalization -- this already
+                    impressive pace of growth will accelerate.
+                </p>
+            </div>
+
+        </div>
+        <style>
+            .black-block {
+                background-color: #2B2C2E;
+                color: #fff;
+                padding: 20px 170px;
+            }
+
+            .white-block {
+                background-color: #fff;
+                padding: 20px 170px;
+            }
+        </style>
+        <div class="black-block">
+            <h2>
+                CANADA'S MOVE TO LEGALIZED RECREATIONAL CANNABIS
+                COULD CREATE A $23 BILLION INDUSTRY --- BIGGER THAN
+                BEER AND WINE.
+            </h2>
+        </div>
+        <div class="white-block">
+            <h2>
+                ONE CANNABIS INDUSTRY RESEARCH FIRM (2) PREDICTS (SEE CHART BELOW)
+                THAT CANNABIS SALES IN THE UNITED STATES WILL INCREASE MORE THAN
+                200% TO $22 BILLION BY 2020.
+            </h2>
+        </div>
+        <style>
+            .chart>.title {
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            .icon {
+                background-color: #0a5736;
+                width: 20%;
+                max-width: 60px;
+                padding: 20px 20px 20px 80px;
+                display: flex;
+                align-items: center;
+            }
+
+            .title>.text {
+                color: #fff;
+                margin-left: 10px;
+                background-color: #0a5736;
+                padding: 20px 40px;
+                font-size: 22px;
+                display: flex;
+                align-items: center;
+            }
+
+            .chart>.image {
+                width: 75%;
+                margin: 40px auto 0;
+            }
+        </style>
+        <div class="chart">
+            <div class="title">
+                <div class="icon">
+                    <img src="./Asset23.svg" alt="">
+                </div>
+                <div class="text">
+                    <h2>
+                        GROWTH OF LEGAL MEDICAL & ADULT USE MARIJUANA SALES 2014 - 2020
+                    </h2>
+                </div>
+            </div>
+            <div class="image">
+                <img src="./Asset22.svg" alt="">
+            </div>
+        </div>
+        <style>
+            .claim {
+                background-color: #0a5736;
+                color: #ffffff;
+                padding: 40px 10%;
+            }
+            .claim > * {
+                color:#97B79C;
+                margin: 20px;
+            }
+            .claim > h2 {
+                color: #ffffff;
+            }
+        </style>
+        <div class="claim">
+            <h2>
+                THIS INCREDIBLE OPPORTUNITY HASN'T GONE UNNOTICED.
+            </h2>
+            <h3>
+                Investors now clamor for marijuana stocks like Chemesis (CSE: CSI / OTC: CADMF).
+            </h3>
+            <h3>
+                CANNABIS STOCKS IN NORTH AMERICA HAVE BEEN AMONG THE MOST HEAVILY TRADED
+                SECURITIES THIS YEAR, AND THAT HELPED CHEMESIS (CSE: CSI / OTC: CADMF) HIT THAT
+                402% SHARE VALUE INCREASE IN JUST 60 DAYS.
+            </h3>
+            <h3>
+                (CTA Box, Links to online brokers and Disclaimer TBD.)
+            </h3>
+            <p>
+                (1) Fool.com<br>
+                (2) Arcview
+            </p>
+        </div>
+    </div>
+    <div class="lightbox">
+        <h3 class="close">
+            Close
+        </h3>
+    </div>
+    <style>
+    
+    .lightbox {
+        position: relative;
+        transform: translateX(100%);
+        height: 100vh;
+        width: 35%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, .6);
+        transition: transform .7s ease-out;
+    }
+    .close {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        color: #003826;
+        background-color: #f3f3f3;
+        padding: 10px;
+        box-shadow: 4px 4px 20px 0 #999;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .showup {
+        transform: translateX(0);
+    }
+    </style>
+
+    <script defer>
+        var popupBlock = document.querySelector('.lightbox');
+        var closeBtn = document.querySelector('.close')
+        var showed = false
+
+
+        window.onload = function () {
+            setThingsPosition()
+            // popup()
+            closeBtn.addEventListener('click', function() {
+                popupHide()
+            })
+        }
+
+        window.addEventListener('scroll', function(e) {
+            console.log('hi')
+            console.dir(document.documentElement.scrollTop)
+            if(document.documentElement.scrollTop > 800 && !showed) {
+                popupShow()
+                showed = true
+            }
+        })
+        function popup() {
+            setTimeout(() => {
+                popupShow()
+            }, 2000);
+        }
+
+        function popupShow() {
+            popupBlock.className += ' showup'
+        }
+        function popupHide() {
+            popupBlock.className = popupBlock.className.replace(' showup', '')
+        }
+
+
+
+        function setThingsPosition() {
+            var greenblock = document.querySelector('.greenblock')
+            var things = document.querySelector('.things')
+            things.style.paddingTop = greenblock.offsetHeight - 30 + 'px'
+        }
+    </script>
 </body>
 
 </html>
