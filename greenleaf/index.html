@@ -1595,8 +1595,10 @@
 
         window.addEventListener('scroll', function (e) {
             console.log('hi')
-            console.dir(document.documentElement.scrollTop)
-            if (document.documentElement.scrollTop > 800 && !showed) {
+            var documentElementScrollTop = document.documentElement.scrollTop || document.body.scrollTop || window.scrollY
+            // compatability
+            console.dir(documentElementScrollTop)
+            if (documentElementScrollTop > 800 && !showed) {
                 popupShow()
                 showed = true
             }
