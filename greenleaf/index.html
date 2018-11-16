@@ -41,6 +41,10 @@
             font-family: 'nirmala bold';
         }
 
+        h2>* {
+            font-family: 'nirmala bold';
+        }
+
         body {
             margin: 0;
         }
@@ -107,7 +111,7 @@
             margin-left: 20px;
             flex: 1;
             color: #fff;
-            font-size: 36px;
+            font-size: 40px;
             line-height: 54px;
             padding: 20px 40px;
             background-image: linear-gradient(to right, #003826 0%, #0a5937 100%);
@@ -116,7 +120,7 @@
 
         .greenblock>.title>p>span {
             color: #61B146;
-            font-size: 40px;
+            font-size: 56px;
         }
 
         .things {
@@ -252,6 +256,22 @@
         .prompt>.content>p {
             margin-bottom: 10px;
         }
+
+        .prompt-mobile {
+            display: none;
+            background-color: #2B2C2E;
+            color: white;
+            padding: 20px;
+        }
+
+        .prompt-mobile>h3 {
+            font-family: 'nirmala bold';
+            color: #63b044;
+        }
+
+        .prompt-mobile>* {
+            margin-bottom: 20px;
+        }
     </style>
     <div class="prompt">
         <div class="content">
@@ -292,6 +312,36 @@
         </div>
 
     </div>
+    <div class="prompt-mobile">
+        <p>
+            Penny stock investors see explosive small cap stock rallies happen almost daily.
+        </p>
+        <p>
+            Many believe the Legal & Medical Marijuana Industry is the next Big BOOM
+            Sector.
+        </p>
+        <p>
+            And it may have only just begun!
+        </p>
+        <h3>
+            <span>NO DOUBT:</span> THESE ARE HISTORIC TIMES
+        </h3>
+        <p>
+            If you think you missed the boat… weʼre here to tell you to think again!
+        </p>
+        <p>
+            The Cannabis Sector is still in its infancy and poised for RAPID GROWTH.
+        </p>
+        <p>
+            In fact, most of these stocks are still trading for just PENNIES PER SHARE.
+        </p>
+        <h2>
+            <span>
+                THIS MAY NEVER HAPPEN AGAIN
+            </span>
+        </h2>
+    </div>
+
     <style>
         .halfhalf {
             box-sizing: border-box;
@@ -357,6 +407,8 @@
             display: flex;
             background-image: linear-gradient(to top, #003826 0%, #0a5937 100%);
             color: #fff;
+            position: relative;
+            margin-bottom: 80px;
         }
 
         .otc>.left {
@@ -430,7 +482,15 @@
                     JUST LOOK AT CHEMESIS (CSE: CSI / OTC: CADMF.)
                 </h3>
             </div>
-        </div>
+        </div><img class="tri" src="./GreenBTM.svg" alt="">
+        <style>
+            img.tri {
+                position: absolute;
+                top: 99.9%;
+                width: 50%;
+            }
+        </style>
+
     </div>
     <style>
         .history {
@@ -479,8 +539,17 @@
         .why {
             background-color: #2B2C2E;
             color: #fff;
-            padding: 20px;
+            padding: 20px 150px;
             font-size: 32px;
+            position: relative;
+        }
+
+        img.arrow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 128px;
+            max-height: 100%;
         }
     </style>
     <div class="history">
@@ -512,6 +581,7 @@
             </h2>
         </div>
         <h2 class="why">
+            <img class="arrow" src="./GreenSideArrow.svg" alt="">
             WHY?
         </h2>
         <div class="content">
@@ -671,7 +741,7 @@
             </div>
             <div class="content">
                 <h2>
-                    <span>29 STATES HAVE BROAD</span>-SWEEPING MEDICAL
+                    <span class="mobile">29 STATES HAVE BROAD</span>-SWEEPING MEDICAL
                     CANNABIS <span>LAWS SINCE 1996, 29 STATES PASSED
                         BROAD-SWEEPING MEDICAL POT LAWS.</span>
                 </h2>
@@ -813,7 +883,6 @@
                 padding: 20px 10%;
             }
 
-            .bottom-right {}
 
             .gray {
                 background-color: #e3e3e3;
@@ -853,7 +922,8 @@
             .dark-green>.yellow-green {
                 color: #97B79C;
             }
-            .dark-green>.yellow-green > h2{
+
+            .dark-green>.yellow-green>h2 {
                 color: #fff;
             }
         </style>
@@ -904,7 +974,7 @@
                     align-items: center;
                     background-color: #0a5736;
                     padding: 20px;
-                    color:#63b044;
+                    color: #63b044;
                     font-family: 'nirmala bold';
                 }
 
@@ -915,11 +985,13 @@
                     margin-left: 20px;
                     font-family: 'nirmala bold';
                 }
-                .desc > * {
+
+                .desc>* {
                     font-family: 'nirmala bold';
                 }
+
                 .desc>b {
-                    
+
                     color: #97B79C;
                 }
             </style>
@@ -929,7 +1001,7 @@
                 </div>
                 <div class="desc">
                     CANNABIS SALES <b>IN THE UNITED STATES
-                            INCREASED</b> 30% FROM 2015 TO REACH
+                        INCREASED</b> 30% FROM 2015 TO REACH
                     <span>$6.7 BILLION.</span>
                 </div>
             </div>
@@ -1047,11 +1119,13 @@
                 color: #ffffff;
                 padding: 40px 10%;
             }
-            .claim > * {
-                color:#97B79C;
+
+            .claim>* {
+                color: #97B79C;
                 margin: 20px;
             }
-            .claim > h2 {
+
+            .claim>h2 {
                 color: #ffffff;
             }
         </style>
@@ -1082,33 +1156,427 @@
         </h3>
     </div>
     <style>
-    
-    .lightbox {
-        position: relative;
-        transform: translateX(100%);
-        height: 100vh;
-        width: 35%;
-        position: fixed;
-        top: 0;
-        right: 0;
-        background-color: rgba(255, 255, 255, .6);
-        transition: transform .7s ease-out;
-    }
-    .close {
-        position: absolute;
-        right: 20px;
-        top: 10px;
-        color: #003826;
-        background-color: #f3f3f3;
-        padding: 10px;
-        box-shadow: 4px 4px 20px 0 #999;
-        border-radius: 10px;
-        cursor: pointer;
-    }
+        .lightbox {
+            position: relative;
+            transform: translateX(100%);
+            height: 100vh;
+            width: 35%;
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, .6);
+            transition: transform .7s ease-out;
+        }
 
-    .showup {
-        transform: translateX(0);
-    }
+        .close {
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            color: #003826;
+            background-color: #f3f3f3;
+            padding: 10px;
+            box-shadow: 4px 4px 20px 0 #999;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .showup {
+            transform: translateX(0);
+        }
+    </style>
+
+
+    <style>
+        /* This is for mobile */
+        @media screen and (max-width: 960px) {
+            .greenblock>.title {
+                font-size: 20px;
+            }
+
+            .masthead-logo {
+                height: 40vh;
+            }
+
+            .masthead-logo>.image-wrapper {
+                left: calc(50% - 150px);
+                top: 20px;
+            }
+
+            .greenblock {
+                width: 92%;
+                left: 4%;
+            }
+
+            .greenblock>.title {
+                padding: 10px;
+                margin-left: 4px;
+            }
+
+            .greenblock>.image-wrapper {
+                width: 20%
+            }
+
+            .greenblock>.title>p>span {
+                font-size: 24px;
+            }
+
+            .things {
+                font-size: 24px;
+                padding: 20px 20px 60px;
+                font-family: 'nirmala bold';
+            }
+
+            .things>span {
+                font-family: 'nirmala bold';
+            }
+
+            .learn {
+                padding: 0
+            }
+
+            .whiteblock {
+                display: none;
+            }
+
+            .learn>p {
+                font-size: 20px;
+                font-family: 'nirmala bold';
+            }
+
+            .learn>p>span {
+                font-family: 'nirmala bold';
+            }
+
+            .prompt {
+                position: relative;
+                margin-top: 0;
+                background-color: #63b044;
+                /* margin-bottom: 100px; */
+            }
+
+            .prompt h3,
+            .prompt p {
+                display: none;
+            }
+
+            .prompt span {
+                color: black;
+            }
+
+            .prompt>.content>h2 {
+                font-size: 22px;
+            }
+
+            .prompt>.content>h2>span {
+                font-family: 'nirmala bold';
+            }
+
+            .prompt>.content>h2:last-child {
+                display: none;
+            }
+
+            .prompt>.image-wrapper {
+                padding: 0;
+                width: 40%;
+            }
+
+            .prompt::after {
+                position: absolute;
+                top: 100%;
+                content: '';
+                display: block;
+                border-width: 20px 40px;
+                border-style: solid;
+                border-color: transparent;
+                border-top-color: #63b044;
+            }
+
+            .prompt-mobile {
+                padding-top: 40px;
+                padding-bottom: 0;
+                display: block;
+            }
+
+            .prompt-mobile>h2 {
+                margin: 0;
+            }
+
+            .halfhalf {
+                background-color: #0a5937;
+                flex-direction: column;
+                position: relative;
+            }
+
+            .halfhalf>* {
+                width: 100%;
+            }
+
+            .halfhalf {
+                overflow: visible;
+            }
+
+            .top-triangle {
+                width: 0;
+            }
+
+            .halfhalf>.text {
+                position: relative;
+                top: -80px;
+                z-index: 20;
+                transform: skewY(9deg);
+                background-color: #fff;
+                padding: 50px 0;
+            }
+
+            .halfhalf>.text>h2 {
+                transform: skewY(-9deg);
+            }
+
+            .bottom-triangle {
+                display: none;
+            }
+
+            .otc {
+                flex-direction: column;
+            }
+
+            .otc>.left,
+            .otc>.right {
+                width: 100%;
+            }
+
+            .tri {
+                display: none;
+            }
+
+            .history>.head {
+                margin: 0;
+                background-color: #2B2C2E;
+            }
+
+            .history>.head>p {
+                font-size: 22px;
+                text-align: center;
+                color: #ffffff;
+                margin-bottom: 20px;
+            }
+
+            .history>.head>p.white {
+                color: #63b044;
+            }
+
+            .history>.head::before {
+                display: none;
+            }
+
+            .history>.content {
+                padding: 20px;
+            }
+
+            .history>.content>h2 {
+                font-size: 18px;
+                color: #63b044;
+            }
+
+            .header-title {
+                width: 100%;
+                padding: 20px;
+                font-size: 24px;
+                font-family: 'nirmala bold';
+                text-align: center;
+            }
+
+            .header-title>span {
+                font-family: 'nirmala bold';
+            }
+
+            .important-thing {
+                flex-direction: column;
+                align-items: center;
+                padding-top: 0;
+            }
+
+            .important-thing>.content {
+                padding: 0px;
+            }
+
+            .important-thing:nth-child(3)>.content>h2 {
+                padding: 0;
+            }
+
+            .content b {
+                font-size: 18px;
+            }
+
+            img.round-arrow {
+                width: 100px;
+            }
+
+            .important-thing>.content h2 {
+                font-size: 24px;
+                text-align: center;
+                padding: 80px 20px 0px;
+            }
+
+            img.top-right {
+                top: 170px;
+                left: 65%;
+            }
+
+            .important-things>div:nth-child(5) {
+                padding-top: 0;
+                background-color: #63b044;
+                border-top: 80px solid #0a5736;
+                color: #ffffff;
+            }
+
+            body>div.important-things>div:nth-child(5)>div.image-wrapper {
+                position: absolute;
+                top: -50px;
+            }
+
+            .important-things>div:nth-child(5) span {
+                color: #ffffff;
+            }
+
+            .important-things>div:nth-child(5) span.mobile {
+                color: #0a5736;
+            }
+
+            .flex {
+                flex-direction: column;
+            }
+
+            .important-thing.light-green {
+                /* border-top: 80px solid #2A5E39; */
+            }
+
+            .important-thing.light-green>.content.flex>.text>h2 {
+                background-color: #2A5E39;
+                padding-bottom: 60px;
+            }
+
+            .important-thing.light-green>.image-wrapper {
+                position: absolute;
+                top: -40px;
+            }
+
+            .flex p,
+            .flex h3 {
+                padding: 0 20px;
+            }
+
+            .flex p>strong {
+                font-size: 18px;
+            }
+
+            .important-thing>.content h3 {
+                font-size: 18px;
+                font-family: 'nirmala';
+                font-weight: 100;
+            }
+
+            .important-things>div:nth-child(8) {
+                background-color: #2B2C2E;
+                color: #fff;
+            }
+
+            .important-thing.gray > div.content > h2,
+            .dark-green>.yellow-green>h2,
+            div:nth-child(8)>div.content>h2 {
+                padding-top: 20px;
+            }
+            
+
+            .dark-green>.yellow-green>h3,
+            .dark-green>.yellow-green>p,
+            div:nth-child(8)>div.content p,
+            div:nth-child(8)>div.content h3,
+            div:nth-child(11)>div.content p,
+            div:nth-child(11)>div.content h3,
+            .important-thing.gray > div.content>p,
+            .important-thing.gray > div.content>h3
+             {
+                padding: 0 20px;
+            }
+
+            .quote {
+                height: 40vh;
+            }
+            .quote-block {
+                font-size: 17px;
+                padding: 10px 20px;
+                width: 86%;
+            }
+            div:nth-child(11) > .content > h2 {
+                padding-top: 0;
+            }
+            .green-text-block {
+                position: static;
+                width: 100%;
+                padding: 20px;
+                box-sizing: border-box;
+                font-size: 20px;
+            }
+
+            .green-textblock {
+                width: 100%;
+                bottom: -45px;
+                left: 0;
+            }
+            .year, .desc {
+                font-size: 16px;
+                padding: 10px;
+            }
+            .year {
+                padding: 10px 20px;
+            }
+            div.important-things > div:nth-child(18)>.image-wrapper {
+                position: relative;
+                top: 50px;
+            }
+             div:nth-child(18) > div.content > h2 {
+                 padding-top: 40px;
+             }
+             div:nth-child(18) > div.content > h3, 
+             div:nth-child(18) > div.content > p,
+             div:nth-child(18) > div.content > h4 {
+                 padding: 0 20px;
+             }
+             div:nth-child(18) > div.content > h4 {
+                 margin: 20px auto;
+             }
+             .black-block,.white-block {
+                 padding: 20px;
+                 font-size: 13px;
+                 background-color:#2B2C2E;
+                 color: #ffffff;
+             }
+             .chart>.title {
+                 margin-top: 10px;
+             }
+             .title>.text>h2 {
+                 font-size: 20px;
+             }
+             .icon {
+                 padding: 10px;
+             }
+             .title>.text {
+                 padding: 5px;
+                 margin-left: 0;
+             }
+             .chart>.image {
+                 width: 94%;
+                 padding: 20px 0;
+             }
+             .claim {
+                 padding: 20px;
+             }
+             .claim>* {
+                 margin: 20px auto;
+             }
+             
+        }
     </style>
 
     <script defer>
@@ -1120,19 +1588,20 @@
         window.onload = function () {
             setThingsPosition()
             // popup()
-            closeBtn.addEventListener('click', function() {
+            closeBtn.addEventListener('click', function () {
                 popupHide()
             })
         }
 
-        window.addEventListener('scroll', function(e) {
+        window.addEventListener('scroll', function (e) {
             console.log('hi')
             console.dir(document.documentElement.scrollTop)
-            if(document.documentElement.scrollTop > 800 && !showed) {
+            if (document.documentElement.scrollTop > 800 && !showed) {
                 popupShow()
                 showed = true
             }
         })
+
         function popup() {
             setTimeout(() => {
                 popupShow()
@@ -1142,6 +1611,7 @@
         function popupShow() {
             popupBlock.className += ' showup'
         }
+
         function popupHide() {
             popupBlock.className = popupBlock.className.replace(' showup', '')
         }
