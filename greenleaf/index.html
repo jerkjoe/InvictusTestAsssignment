@@ -54,7 +54,7 @@
             width: 100%;
             height: 65vh;
             max-height: 500px;
-            background-image: url('./image6.jpg');
+            background-image: url('./Image6.jpg');
             background-size: 100% 100%;
             background-repeat: no-repeat;
         }
@@ -212,6 +212,121 @@
             </div>
         </div>
     </div>
+    <style>
+        .signup1 {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .signup1>.image-wrapper {
+            width: 60%;
+        }
+
+        @media screen and (max-width:980px) {
+            .signup1 {
+                flex-direction: column;
+            }
+
+            .signup1>.image-wrapper {
+                width: 100%;
+            }
+        }
+
+        .signupform {
+            width: 38%;
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: 5%;
+        }
+        .signupform > label {
+            font-weight: 900;
+            box-sizing: border-box;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .signupform>p{
+            text-align: center;
+            font-size: 12px;
+            width: 100%;
+            font-weight: bolder;
+        }
+         .submit-btn {
+            width: 100%;
+            text-align: center;
+            background-color: #f26f16;
+            padding: 6px 0 2px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            border: none;
+            color: #fff;
+            font-weight: bolder;
+            padding: 14px;
+        }
+        .signupform > label > input {
+            width: 100%;
+            height:36px;
+            box-sizing: border-box;
+            border-radius: 4px;
+            box-shadow: none;
+            outline: none;
+            padding: 0 10px;
+        }
+        img.downloadicon {
+            margin-right: 5px;
+            width: 20px;
+            vertical-align: text-top;
+        }
+    </style>
+    <div class="signup1 desktop">
+        <div class="image-wrapper">
+            <img src="./emailsignup1.jpg" alt="">
+        </div>
+        <form class="signupform">
+            <label>
+                NAME*<br>
+                <input type="text" name="" id="">
+            </label>
+            <label>
+                EMAIL*<br>
+                <input type="email" name="" id="">
+            </label>
+            <button class="submit-btn">
+                <img class="downloadicon" src="./Asset17.svg" alt="">
+                SIGN UP
+            </button>
+            <p>
+                GREEN STOCK REPORT RESPECTS YOUR PRIIVACY.
+            </p>
+        </form>
+    </div>
+
+    <style>
+        .mobilesignup {
+            position: relative;
+        }
+    </style>
+    <div class="mobilesignup mobile">
+        <img src="./template-02.jpg" alt="">
+        <form action="" class="signupform bottomright">
+            <label>
+                NAME*<br>
+                <input type="text" name="" id="">
+            </label>
+            <label>
+                EMAIL*<br>
+                <input type="email" name="" id="">
+            </label>
+            <button class="submit-btn">
+                <img class="downloadicon" src="./Asset17.svg" alt="">
+                SIGN UP
+            </button>
+            <p>
+                GREEN STOCK REPORT RESPECTS YOUR PRIIVACY.
+            </p>
+        </form>
+    </div>
 
 
     <!-- prompt -->
@@ -237,7 +352,6 @@
             align-items: flex-end;
         }
 
-        .prompt>.image-wrapper>img {}
 
         .prompt>.content>h2 {
             margin-bottom: 20px;
@@ -424,11 +538,13 @@
             width: 40%;
         }
 
+        /* <!-- updated --> */
         .otc>.left>.image-wrapper {
-            width: 25%;
+            width: 100%;
             margin-bottom: 40px;
         }
 
+        /* <!-- updated end --> */
         .otc .content>h3,
         .otc .content>p {
             margin-bottom: 20px;
@@ -457,9 +573,23 @@
         </div>
     </div>
     <div class="otc">
+        <style>
+            .otc>.right {
+                flex: 1;
+                position: relative;
+                max-width: 517px;
+                top: -60px;
+            }
+
+            @media screen and (max-width: 980px) {
+                .otc>.right {
+                    top: 0px;
+                }
+            }
+        </style>
         <div class="left">
             <div class="image-wrapper">
-                <img src="./Asset11.svg" alt="">
+                <img src="./Asset111.svg" alt="">
             </div>
             <div class="content">
                 <h3>
@@ -476,17 +606,51 @@
                     Powerful Billion-Dollar Corporations — seemingly overnight!
                 </p>
                 <h3>
-                    <div style="display: inline-block;width: 20px;" class="image-wrapper">
-                        <img src="./Asset13.svg" alt="">
+                    <div style="display: inline-block;width: 30px;" class="image-wrapper">
+                        <img src="./click.svg" alt="">
                     </div>
                     JUST LOOK AT CHEMESIS (CSE: CSI / OTC: CADMF.)
                 </h3>
             </div>
-        </div><img class="tri" src="./GreenBTM.svg" alt="">
+        </div>
+        <style>
+            .bottomright {
+                top: 50%;
+                position: absolute;
+                right: 70px;
+                color: #000;
+            }
+            .bottomright > .submit-btn {
+                padding: 4px;
+            }
+        </style>
+        <div class="right">
+            <img src="./template-04.jpg" alt="">
+            <form action="" class="signupform bottomright">
+                <label>
+                    NAME*<br>
+                    <input type="text" name="" id="">
+                </label>
+                <label>
+                    EMAIL*<br>
+                    <input type="email" name="" id="">
+                </label>
+                <button class="submit-btn">
+                    <img class="downloadicon" src="./Asset17.svg" alt="">
+                    SIGN UP
+                </button>
+                <p>
+                    GREEN STOCK REPORT RESPECTS YOUR PRIIVACY.
+                </p>
+            </form>
+        </div>
+        <img class="tri" src="./GreenBTM.svg" alt="">
+
+
         <style>
             img.tri {
                 position: absolute;
-                top: 99.9%;
+                top: 99.8%;
                 width: 50%;
             }
         </style>
@@ -552,50 +716,170 @@
             max-height: 100%;
         }
     </style>
-    <div class="history">
-        <div class="head">
-            <p>
+
+    <style>
+        .historical-data {
+            background-image: url('./bgimg1.jpg');
+            background-position: center center;
+            padding: 40px;
+            margin-bottom: 20px;
+        }
+
+        .historical-data>.detail {
+            background-color: rgba(255, 255, 255, .4);
+        }
+
+        .historical-data .title {
+            font-size: 30px;
+            text-align: center;
+            font-family: 'nirmala bold';
+            padding: 20px 40px;
+        }
+
+        .historical-data .content {
+            padding: 20px 60px;
+            background-color: #fff;
+        }
+
+        img.leaf,
+        img.finger {
+            width: 60px;
+        }
+
+        .historical-data h3 {
+            font-family: 'nirmala bold';
+            font-size: 28px;
+            display: flex;
+            align-items: center;
+        }
+
+        .historical-data h3>p {
+            font-family: 'nirmala bold';
+            margin-left: 10px;
+        }
+
+        .historical-data .content p {
+            margin-bottom: 10px;
+        }
+
+        .why-block {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .why-block>.context {
+            margin-left: 10px;
+
+        }
+
+        @media screen and (max-width: 960px) {
+            
+            .historical-data .content {
+                padding: 0px 20px 30px;
+            }
+
+            .historical-data .title {
+                font-size: 20px;
+                padding: 10px;
+            }
+
+            .historical-data h3 {
+                flex-direction: column;
+                font-size: 20px;
+            }
+
+            .historical-data .content p {
+                margin-top: 10px;
+            }
+
+            .why-block {
+                /* flex-direction: column; */
+            }
+
+            img.leaf,
+            img.finger {
+                width: 50px;
+                margin-top: 20px;
+            }
+
+            .historical-data {
+                padding: 10px;
+            }
+        }
+    </style>
+    <div class="historical-data">
+        <div class="detail">
+            <h2 class="title">
                 IN A RECENT 60-DAY PERIOD, THIS STOCK ROSE 402%!
-            </p>
-            <p class="white">JUST THINK: A $1,000 INVESTMENT TURNED INTO A $5,000.00
-                JACKPOT IN JUST 2 MONTHS!</p>
-        </div>
-        <div class="content">
-            <h2>
-                <span>YOUNG INVESTORS </span> – ESPECIALLY MEN – LOVE CANNABIS STOCKS!
+                JUST THINK: A $1,000 INVESTMENT TURNED INTO A
+                $5,000.00 JACKPOT IN JUST 2 MONTHS!
             </h2>
-            <p>
-                Companies like Chemesis (CSE: CSI / OTC: CADMF) are the preferred small cap stock for investors aged
-                between 22 and 37.
+            <div class="content">
+                <h3>
+                    <img class="leaf" src="./leaf.svg" alt="">
+                    <p>
+                        YOUNG INVESTORS – <br>
+                        ESPECIALLY MEN – LOVE CANNABIS STOCKS!
+                    </p>
+                </h3>
+                <p>
+                    Companies like Chemesis (CSE: CSI / OTC: CADMF) are the preferred small cap stock for investors
+                    aged between 22 and 37.
+                </p>
+                <p>
+                    Millennials – born between 1981 and 1996 – account for about 75% of the cannabis-related
+                    securities trades over the past months, according to data from TD Ameritrade.
+                </p>
+                <p>
+                    This Crowd Also Trades More Actively -- About 25% More Than Other Groups
+                </p>
 
-            </p>
-
-            <p>
-                Millennials – born between 1981 and 1996 – account for about 75% of the cannabis-related securities
-                trades over the past months,
-                according to data from TD Ameritrade.
-            </p>
-            <h2>
-                THIS CROWD ALSO TRADES MORE ACTIVELY -- ABOUT 25% MORE
-                THAN OTHER GROUPS.
-            </h2>
+                <div class="why-block">
+                    <img class="finger" src="./finger.svg" alt="">
+                    <div class="context">
+                        <h3>
+                            WHY?
+                        </h3>
+                        <p>
+                            Because they see the potential – they know that demand for the product is growing by leaps
+                            and bounds, and that governments around the world are easing restrictions on marijuana
+                            products, both for medicinal and recreational use.
+                        </p>
+                        <h4>
+                            AND THAT IS MUSIC TO THE EARS (AND POCKETBOOKS) OF INVESTORS IN CHEMESIS
+                            (CSE: CSI / OTC: CADMF.)
+                        </h4>
+                    </div>
+                </div>
+            </div>
         </div>
-        <h2 class="why">
-            <img class="arrow" src="./GreenSideArrow.svg" alt="">
-            WHY?
-        </h2>
-        <div class="content">
-            <p>
-                Because they see the potential – they know that demand for the product is growing by leaps and
-                bounds, and that governments around
-                the world are easing restrictions on marijuana products, both for medicinal and recreational use
-            </p>
-            <h2>
-                AND THAT IS MUSIC TO THE EARS (AND POCKETBOOKS) OF
-                INVESTORS IN CHEMESIS (CSE: CSI / OTC: CADMF.)
-            </h2>
-        </div>
+        <style>
+            .age-data {
+                margin: 80px 0 40px;
+                width: 400px;
+                padding: 80px;
+                background-position: center center;
+                background-size: cover;
+                background-image: url('./bracket.svg');
+                font-family: 'nirmala bold';
+                font-size: 20px;
+            }
 
+            @media screen and (max-width: 980px) {
+                .age-data {
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding: 36px 60px;
+                    font-size: 16px;
+                }
+            }
+        </style>
+        <div class="age-data">
+            PREFERRED SMALL CAP STOCK
+            FOR INVESTORS AGED BETWEEN
+            22 AND 37.
+        </div>
     </div>
     <style>
         .header-title {
@@ -646,6 +930,7 @@
         .important-thing>.image-wrapper {
             padding-left: 10px;
             max-width: 120px;
+            min-width: 85px;
         }
 
         .important-thing>.content h2 {
@@ -709,7 +994,8 @@
         </div>
         <div class="important-thing">
             <div class="image-wrapper">
-                <img src="./Asset31.svg" alt="">
+                <img src="./Asset31.svg" alt="" class="desktop">
+                <img src="./11.png" alt="" class="mobile">
             </div>
             <div class="content">
                 <h2>
@@ -737,11 +1023,12 @@
 
         <div class="important-thing dark-green">
             <div class="image-wrapper">
-                <img src="./Asset30.svg" alt="">
+                <img src="./Asset30.svg" alt="" class="desktop">
+                <img src="./12.png" alt="" class="mobile">
             </div>
             <div class="content">
-                <h2>
-                    <span class="mobile">29 STATES HAVE BROAD</span>-SWEEPING MEDICAL
+                <h2 id="position">
+                    <span class="mobile-color">29 STATES HAVE BROAD</span>-SWEEPING MEDICAL
                     CANNABIS <span>LAWS SINCE 1996, 29 STATES PASSED
                         BROAD-SWEEPING MEDICAL POT LAWS.</span>
                 </h2>
@@ -750,7 +1037,8 @@
         <div class="important-thing light-green">
             <img class="round-arrow top-right" src="./roundedarrow2.svg" alt="">
             <div class="image-wrapper">
-                <img src="./Asset29.svg" alt="">
+                <img src="./Asset29.svg" alt="" class="desktop">
+                <img src="./13.png" alt="" class="mobile">
             </div>
             <div class="content flex">
                 <div class="text">
@@ -780,12 +1068,101 @@
                 </div>
             </div>
         </div>
-        <div class="signup"></div>
+        <div class="signup3">
+            <style>
+                .signup3 {
+                    background-color: #2B2C2E;
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .signup3>.image-wrapper {
+                    font-size: 0;
+                    width: 30%;
+                }
+            </style>
+            <div class="image-wrapper">
+                <img src="./leftemail.png" alt="">
+            </div>
+            <form class="signuopform2">
+                <style>
+                    .signuopform2 {
+                        display: flex;
+                        text-align: center;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 20px;
+                        background-color: #2B2C2E;
+                    }
+                    .signuopform2 > h2 {
+                        font-size: 36px;
+                        color: #ffffff;
+                        font-family: 'nirmala bold';
+                    }
+                    .signup3 img {
+                        height: 100%;
+                    }
+                    .signuopform2 > p{
+                        color: white;
+                    }
+                    .inputs {
+                        display: flex;
+                        max-width: 600px;
+                        margin: 10px auto;
+                    }
+                    .name, .email {
+                        margin-left: 20px;
+                        display: flex;
+                        width: 50%;
+                        padding: 10px 0;
+                    }
+                    .name>span, .email>span {
+                        color: #fff;
+                        font-weight: 800;
+                        background-color: #63b044;
+                        padding: 8px 12px;
+                        margin-right: 4px;
+                        border-radius: 4px;
+                        
+                    }
+                    .signup3 .submit-btn {
+                        width: 35%;
+                    }
+                </style>
+                <h2>
+                    <span>I WANT MY </span> FREE REPORT
+                </h2>
+                <p>
+                    The FREE 2018 Green Stock Report takes you right where the action is in the thriving
+                    green sector. Discover how this one penny stock can improve your financial life forever!
+                </p>
+                <div class="inputs">
+                    <div class="name">
+                        <span>NAME*</span>
+                        <input type="text" name="name" id="">
+                    </div>
+                    <div class="email">
+                        <span>EMAIL*</span>
+                        <input type="text" name="email" id="">
+                    </div>
+                </div>
+
+                <button class="submit-btn">
+                    <img class="downloadicon" src="./Asset17.svg" alt="">
+                    SIGN UP
+                </button>
+
+            </form>
+
+        </div>
 
 
         <div class="important-thing">
             <div class="image-wrapper">
-                <img src="./Asset28.svg" alt="">
+                <img src="./Asset28.svg" alt="" class="desktop">
+                <img src="./14.png" alt="" class="mobile">
+
             </div>
             <div class="content">
                 <h2>
@@ -812,7 +1189,7 @@
                 height: 35vh;
                 width: 100%;
                 max-height: 400px;
-                background-image: url('./image3.jpg');
+                background-image: url('./Image3.jpg');
                 background-size: cover;
                 display: flex;
                 justify-content: flex-start;
@@ -849,7 +1226,8 @@
 
         <div class="important-thing">
             <div class="image-wrapper">
-                <img src="./Asset27.svg" alt="">
+                <img src="./Asset27.svg" alt="" class="desktop">
+                <img src="./15.png" alt="" class="mobile">
             </div>
             <div class="content">
                 <h2>
@@ -900,7 +1278,8 @@
 
         <div class="important-thing gray">
             <div class="image-wrapper">
-                <img src="./Asset26.svg" alt="">
+                <img src="./Asset26.svg" alt="" class="desktop">
+                <img src="./16.png" alt="" class="mobile">
             </div>
             <div class="content">
                 <h2>
@@ -929,7 +1308,8 @@
         </style>
         <div class="important-thing dark-green">
             <div class="image-wrapper">
-                <img src="./Asset25.svg" alt="">
+                <img src="./Asset25.svg" alt="" class="desktop">
+                <img src="./17.png" alt="" class="mobile">
             </div>
             <div class="content yellow-green">
                 <h2>
@@ -954,6 +1334,9 @@
         <div class="shape-image no-margin">
             <img src="./Image6.jpg" alt="">
             <style>
+                .mobile {
+                    display: none;
+                }
                 .no-margin {
                     margin: 0;
                 }
@@ -1009,7 +1392,9 @@
 
         <div class="important-thing">
             <div class="image-wrapper">
-                <img src="./Asset24.svg" alt="">
+                <img src="./Asset24.svg" alt="" class="desktop">
+                <img src="./18.png" alt="" class="mobile">
+
             </div>
             <div class="content">
                 <h2>
@@ -1110,7 +1495,7 @@
                 </div>
             </div>
             <div class="image">
-                <img src="./Asset22.svg" alt="">
+                <img src="./charts.png" alt="">
             </div>
         </div>
         <style>
@@ -1152,32 +1537,96 @@
     </div>
     <div class="lightbox">
         <h3 class="close">
-            Close
+            <img src="./close.png" alt="">
         </h3>
+        <style>
+            .signupside {
+            position: relative;
+        }
+        .signupform.bottomright.side {
+            top: 52%;
+        }
+        </style>
+        <div class="mobilesignup">
+            <img src="./template-03.jpg" alt="">
+            <form action="" class="signupform bottomright side">
+                <label>
+                    NAME*<br>
+                    <input type="text" name="" id="">
+                </label>
+                <label>
+                    EMAIL*<br>
+                    <input type="email" name="" id="">
+                </label>
+                <button class="submit-btn">
+                    <img class="downloadicon" src="./Asset17.svg" alt="">
+                    SIGN UP
+                </button>
+                <p>
+                    GREEN STOCK REPORT RESPECTS YOUR PRIIVACY.
+                </p>
+            </form>
+        </div>
     </div>
     <style>
+        .signup-side .content {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            padding: 80px 40px 20px;
+        }
+
+        .signup-side .image-wrapper {
+            width: 30%;
+        }
+
+        .signup-side>h2 {
+            font-size: 36px;
+            box-sizing: border-box;
+            padding: 20px 40px;
+            background-color: #0a5736;
+            color: white;
+            position: relative;
+        }
+
+        .signup-side>h2::after {
+            content: '';
+            width: 0;
+            position: absolute;
+            bottom: -40px;
+            right: 20px;
+            display: block;
+            border-width: 20px 40px;
+            border-style: solid;
+            border-color: transparent;
+            border-top-color: #0a5736;
+        }
+
+        .signup-side {
+            margin: 20% auto 0;
+            width: 98%;
+        }
+
         .lightbox {
+            z-index: 20;
             position: relative;
             transform: translateX(100%);
             height: 100vh;
             width: 35%;
+            max-width: 520px;
             position: fixed;
-            top: 0;
+            bottom: 0;
             right: 0;
             background-color: rgba(255, 255, 255, .6);
             transition: transform .7s ease-out;
         }
 
         .close {
-            position: absolute;
-            right: 20px;
-            top: 10px;
-            color: #003826;
-            background-color: #f3f3f3;
-            padding: 10px;
-            box-shadow: 4px 4px 20px 0 #999;
-            border-radius: 10px;
-            cursor: pointer;
+           text-align: right;
+           padding: 0px 20px 0;
+        }
+        .close > img {
+            width: 50px;
         }
 
         .showup {
@@ -1188,7 +1637,37 @@
 
     <style>
         /* This is for mobile */
+        
         @media screen and (max-width: 960px) {
+            
+            .lightbox {
+                transform: translateX(0) translateY(100%); 
+                width: 100%;
+                height: 78vh;
+                bottom: 0;
+            }
+            .showup {
+                transform: translateY(0);
+            }
+
+            .important-thing>.content p {
+                padding: 0 20px;
+            }
+            p {
+                text-align: justify;
+            }
+            .important-thing>.flex>.image-wrapper {
+            margin: 30px auto 10px;
+        }
+            .signuopform2 > p {
+                margin: 30px auto;
+            }
+            .mobile {
+                display: block;
+            }
+            .desktop {
+                display: none;
+            }
             .greenblock>.title {
                 font-size: 20px;
             }
@@ -1311,9 +1790,9 @@
                 width: 100%;
             }
 
-            .halfhalf {
+            /* .halfhalf {
                 overflow: visible;
-            }
+            } */
 
             .top-triangle {
                 width: 0;
@@ -1343,6 +1822,41 @@
             .otc>.left,
             .otc>.right {
                 width: 100%;
+                margin: 0 auto;
+            }
+
+            /**/
+            .signupform {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .bottomright {
+                width: 50%;
+                right: 8%;
+                top:55%;
+            }
+
+            .signupform>label {
+                margin-bottom: 4px;
+                font-size: 14px;
+            }
+
+            .signupform>label>input {
+                height: 20px;
+            }
+
+            .submit-btn {
+                margin-bottom: 4px;
+                margin-top: 8px;
+            }
+
+            .signupform>p {
+                font-size: 7px;
+            }
+
+            .signup1 {
+                padding-bottom: 20px;
             }
 
             .tri {
@@ -1401,7 +1915,7 @@
             }
 
             .important-thing:nth-child(3)>.content>h2 {
-                padding: 0;
+                padding: 0 20px;
             }
 
             .content b {
@@ -1439,7 +1953,7 @@
                 color: #ffffff;
             }
 
-            .important-things>div:nth-child(5) span.mobile {
+            .important-things>div:nth-child(5) span.mobile-color {
                 color: #0a5736;
             }
 
@@ -1481,12 +1995,12 @@
                 color: #fff;
             }
 
-            .important-thing.gray > div.content > h2,
+            .important-thing.gray>div.content>h2,
             .dark-green>.yellow-green>h2,
             div:nth-child(8)>div.content>h2 {
                 padding-top: 20px;
             }
-            
+
 
             .dark-green>.yellow-green>h3,
             .dark-green>.yellow-green>p,
@@ -1494,23 +2008,25 @@
             div:nth-child(8)>div.content h3,
             div:nth-child(11)>div.content p,
             div:nth-child(11)>div.content h3,
-            .important-thing.gray > div.content>p,
-            .important-thing.gray > div.content>h3
-             {
+            .important-thing.gray>div.content>p,
+            .important-thing.gray>div.content>h3 {
                 padding: 0 20px;
             }
 
             .quote {
                 height: 40vh;
             }
+
             .quote-block {
                 font-size: 17px;
                 padding: 10px 20px;
                 width: 86%;
             }
-            div:nth-child(11) > .content > h2 {
+
+            div:nth-child(11)>.content>h2 {
                 padding-top: 0;
             }
+
             .green-text-block {
                 position: static;
                 width: 100%;
@@ -1524,60 +2040,164 @@
                 bottom: -45px;
                 left: 0;
             }
-            .year, .desc {
+
+            .year,
+            .desc {
                 font-size: 16px;
                 padding: 10px;
             }
+
             .year {
                 padding: 10px 20px;
             }
-            div.important-things > div:nth-child(18)>.image-wrapper {
+
+            div.important-things>div:nth-child(18)>.image-wrapper {
                 position: relative;
                 top: 50px;
             }
-             div:nth-child(18) > div.content > h2 {
-                 padding-top: 40px;
-             }
-             div:nth-child(18) > div.content > h3, 
-             div:nth-child(18) > div.content > p,
-             div:nth-child(18) > div.content > h4 {
-                 padding: 0 20px;
-             }
-             div:nth-child(18) > div.content > h4 {
-                 margin: 20px auto;
-             }
-             .black-block,.white-block {
-                 padding: 20px;
-                 font-size: 13px;
-                 background-color:#2B2C2E;
-                 color: #ffffff;
-             }
-             .chart>.title {
-                 margin-top: 10px;
-             }
-             .title>.text>h2 {
-                 font-size: 20px;
-             }
-             .icon {
-                 padding: 10px;
-             }
-             .title>.text {
-                 padding: 5px;
-                 margin-left: 0;
-             }
-             .chart>.image {
-                 width: 94%;
-                 padding: 20px 0;
-             }
-             .claim {
-                 padding: 20px;
-             }
-             .claim>* {
-                 margin: 20px auto;
-             }
-             
+
+            div:nth-child(18)>div.content>h2 {
+                padding-top: 40px;
+            }
+
+            div:nth-child(18)>div.content>h3,
+            div:nth-child(18)>div.content>p,
+            div:nth-child(18)>div.content>h4 {
+                padding: 0 20px;
+            }
+
+            div:nth-child(18)>div.content>h4 {
+                margin: 20px auto;
+            }
+
+            .black-block,
+            .white-block {
+                padding: 20px;
+                font-size: 13px;
+                background-color: #2B2C2E;
+                color: #ffffff;
+            }
+
+            .chart>.title {
+                margin-top: 10px;
+            }
+
+            .title>.text>h2 {
+                font-size: 20px;
+            }
+
+            .icon {
+                padding: 10px;
+            }
+
+            .title>.text {
+                padding: 5px;
+                margin-left: 0;
+            }
+
+            .chart>.image {
+                width: 94%;
+                padding: 20px 0;
+            }
+
+            .claim {
+                padding: 20px;
+            }
+
+            .claim>* {
+                margin: 20px auto;
+            }
+
         }
     </style>
+
+
+    <div class="signup4">
+        <style>
+            .signup4 {
+                background-color: #63b044;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .signup4>.image-wrapper {
+                font-size: 0;
+                width: 20%;
+            }
+            .lightcolor {
+                background-color: #63b044;
+            }
+            .lightcolor>h2>span {
+                
+                color: black;
+            }
+            .lightcolor .name>span,.lightcolor .email>span {
+                background-color:#2B2C2E;
+            }
+            .signuopform2 .submit-btn {
+                width: 35%;
+            }
+            .signup4 img {
+                height: 100%;
+            }
+            @media screen and (max-width: 960px) {
+                .signup3 > .image-wrapper, .signup4 > .image-wrapper{
+                    display: none;
+                }
+                .signuopform2 {
+                    box-sizing: border-box;
+                }
+                .inputs {
+                    width: 80%;
+                    margin: 0 auto;
+                    flex-direction: column;
+                }
+                .signup3 .submit-btn, .signup4 .submit-btn  {
+                    width: 60%;
+                }
+                .name, .email {
+                    width: 100%;
+                    margin: 0 auto;
+                    display: flex;
+                }
+                .name> input, .email > input {
+                    flex: 1;
+                }
+            }   
+                        </style>
+        <div class="image-wrapper">
+            <img src="./emailer4.png" alt="">
+        </div>
+        <form class="signuopform2 lightcolor">
+            <h2>
+                <span>I WANT MY </span> FREE REPORT
+            </h2>
+            <p>
+                The FREE 2018 Green Stock Report takes you right where the action is in the thriving
+                green sector. Discover how this one penny stock can improve your financial life forever!
+            </p>
+            <div class="inputs">
+                <div class="name">
+                    <span>NAME*</span>
+                    <input type="text" name="name" id="">
+                </div>
+                <div class="email">
+                    <span>EMAIL*</span>
+                    <input type="text" name="email" id="">
+                </div>
+            </div>
+
+            <button class="submit-btn">
+                <img class="downloadicon" src="./Asset17.svg" alt="">
+                SIGN UP
+            </button>
+        </form>
+
+    </div>
+
+
+
+
 
     <script defer>
         var popupBlock = document.querySelector('.lightbox');
@@ -1595,20 +2215,15 @@
 
         window.addEventListener('scroll', function (e) {
             console.log('hi')
-            var documentElementScrollTop = document.documentElement.scrollTop || document.body.scrollTop || window.scrollY
+            var documentElementScrollTop = document.documentElement.scrollTop || document.body.scrollTop ||
+                window.scrollY
             // compatability
             console.dir(documentElementScrollTop)
-            if (documentElementScrollTop > 800 && !showed) {
+            if (documentElementScrollTop > 5000 && !showed) {
                 popupShow()
                 showed = true
             }
         })
-
-        function popup() {
-            setTimeout(() => {
-                popupShow()
-            }, 2000);
-        }
 
         function popupShow() {
             popupBlock.className += ' showup'
