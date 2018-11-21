@@ -17,8 +17,11 @@
         * {
             padding: 0;
             margin: 0;
-            line-height: 1.4;
+            /* line-height: 1.4; */
             font-family: "nirmala"
+        }
+        div.masthead > div.masthead-content > div.greenblock > div.title > p {
+            line-height: 1.1;
         }
 
         h1,
@@ -202,7 +205,7 @@
             </div>
             <div class="title">
                 <p>
-                    IPO SEES <span>402%</span> SHARE VALUE
+                    IPO SEES <span>402%</span> SHARE VALUE<br>
                     INCREASE IN JUST <span>60 DAYS!</span>
                 </p>
             </div>
@@ -239,7 +242,7 @@
 
         @media screen and (max-width:980px) {
             .greenblock>.title>p {
-                font-size: 20px;
+                font-size: 16px;
             }
             .signup1 {
                 flex-direction: column;
@@ -247,6 +250,12 @@
 
             .signup1>.image-wrapper {
                 width: 100%;
+            }
+            div.learn > p {
+                line-height: 1.2;
+                text-align: left;
+                font-size: 18px;
+                padding: 30px 20px;
             }
         }
 
@@ -264,7 +273,7 @@
         }
         .signupform>p{
             text-align: center;
-            font-size: 12px;
+            font-size: 8px;
             width: 100%;
             font-weight: bolder;
         }
@@ -386,14 +395,14 @@ margin-bottom: 0;}
             background-color: #2B2C2E;
             color: #fff;
             margin-top: 20px;
-            padding: 20px 8%;
+            padding: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         .prompt>.content {
-            width: 60%;
+            width: 65%;
         }
 
         .prompt>.image-wrapper {
@@ -435,7 +444,8 @@ margin-bottom: 0;}
         }
 
         .prompt-mobile>* {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+            line-height: 1.1;
         }
     </style>
 <div class="prompt">
@@ -584,7 +594,7 @@ margin-bottom: 0;}
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 0px 10% 40px;
+            padding: 0px 20px 40px;
         }
 
         .otc>.right {
@@ -640,6 +650,7 @@ margin-bottom: 0;}
 
             @media screen and (max-width: 980px) {
                 .otc>.right {
+                    margin-bottom: 10px;
                     top: 0px;
                 }
             }
@@ -666,7 +677,7 @@ margin-bottom: 0;}
                 <div style="display: inline-block;width: 30px;" class="image-wrapper">
                     <img src="https://greenstockreport.ca/wp-content/uploads/2018/11/lp/click.svg" alt="">
                 </div>
-                JUST LOOK AT CHEMESIS (CSE: CSI / OTC: CADMF.)
+                JUST LOOK AT CHEMESIS <br>(CSE: CSI / OTC: CADMF.)
             </h3>
         </div>
     </div>
@@ -840,13 +851,13 @@ margin-bottom: 0;}
         }
 
         .historical-data .content p {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
         .why-block {
             display: flex;
             align-items: center;
-            margin-top: 20px;
+            margin-top: 40px;
         }
 
         .why-block>.context {
@@ -857,7 +868,7 @@ margin-bottom: 0;}
         @media screen and (max-width: 960px) {
             
             .historical-data .content {
-                padding: 0px 20px 30px;
+                padding: 0px 20px 0px;
             }
 
             .historical-data .title {
@@ -875,7 +886,8 @@ margin-bottom: 0;}
             }
 
             .why-block {
-                /* flex-direction: column; */
+                flex-direction: column;
+                margin: 0;
             }
 
             img.leaf,
@@ -885,7 +897,7 @@ margin-bottom: 0;}
             }
 
             .historical-data {
-                padding: 10px;
+                padding: 30px 20px;
             }
         }
     </style>
@@ -893,15 +905,16 @@ margin-bottom: 0;}
     <div class="detail">
         <h2 class="title">
             IN A RECENT 60-DAY PERIOD, THIS STOCK ROSE 402%!
-           <br> JUST THINK: A $1,000 INVESTMENT TURNED INTO A
-            <br>$5,000.00 JACKPOT IN JUST 2 MONTHS!
+             JUST THINK: A $1,000 INVESTMENT TURNED INTO A
+            $5,000.00 JACKPOT IN JUST 2 MONTHS!
         </h2>
         <div class="content">
             <h3>
                 <img class="leaf" src="https://greenstockreport.ca/wp-content/uploads/2018/11/lp/leaf.svg" alt="">
                 <p>
                     YOUNG INVESTORS – <br>
-                    ESPECIALLY MEN – LOVE CANNABIS STOCKS!
+                    ESPECIALLY MEN – 
+                    <br>LOVE CANNABIS STOCKS!
                 </p>
             </h3>
             <p>
@@ -996,6 +1009,7 @@ margin-bottom: 0;}
 
         .important-thing:nth-child(3) {
             margin-top: -10%;
+            padding-bottom: 0;
         }
 
         .important-thing:nth-child(3)>.content>h2 {
@@ -1020,14 +1034,18 @@ margin-bottom: 0;}
             max-width: 120px;
             min-width: 85px;
         }
-
+        .greenblock p {
+            margin: 0 auto;
+        }
         .important-thing>.content h2 {
             padding-top: 40px;
             margin-bottom: 20px;
-            color:#fff;
             font-size: 36px;
         }
 
+        .important-thing>.content h2.white,.important-thing>.content h3.white {
+            color: #fff;
+        }
         .dark-green {
             background-color: #0a5736;
         }
@@ -1050,8 +1068,7 @@ margin-bottom: 0;}
         }
 
         .important-thing>.content h3 {
-            color: white;
-            font-size: 28px;
+            font-size: 24px;
             margin-bottom: 10px;
         }
 
@@ -1118,8 +1135,8 @@ margin-bottom: 0;}
             <img src="https://greenstockreport.ca/wp-content/uploads/2018/11/lp/12.svg" alt="" class="mobile">
         </div>
         <div class="content">
-            <h2 id="position">
-                <span class="mobile-color">29 STATES HAVE BROAD</span>-SWEEPING MEDICAL
+            <h2 id="position" class="white">
+                <span class="mobile-color">29 STATES HAVE BROAD</span> - SWEEPING MEDICAL
                 CANNABIS <span>LAWS SINCE 1996, 29 STATES PASSED
                     BROAD-SWEEPING MEDICAL POT LAWS.</span>
             </h2>
@@ -1134,7 +1151,7 @@ margin-bottom: 0;}
         </div>
         <div class="content flex">
             <div class="text">
-                <h2>
+                <h2 class="white">
                     CANADA LEGALIZED RECREATIONAL CANNABIS
                 </h2>
                 <p>
@@ -1150,7 +1167,7 @@ margin-bottom: 0;}
                         AND INVESTORS LIKE A COMPANY – LIKE CHEMESIS – WITH GLOBAL VISION.
                     </strong>
                 </p>
-                <h3>
+                <h3 class="white">
                     THAT IS POSSIBLY ANOTHER REASON THE STOCK
                     ROSE 402% IN JUST 2 MONTHS!
                 </h3>
@@ -1159,9 +1176,7 @@ margin-bottom: 0;}
                 <img src="https://greenstockreport.ca/wp-content/uploads/2018/11/lp/Asset16.png" alt="">
             </div>
         </div>
-    </div>
-    <div class="signup3">
-        <style>
+    </div><style>
             .signup3 {
                     background-color: #2B2C2E;
                     display: flex;
@@ -1170,21 +1185,17 @@ margin-bottom: 0;}
 
                 .signup3>.image-wrapper {
                     font-size: 0;
-                    width: 30%;
+                    /* width: 30%; */
                 }
-            </style>
-        <div class="image-wrapper">
-            <img src="https://greenstockreport.ca/wp-content/uploads/2018/11/lp/leftemail.png" alt="">
-        </div>
-
-        <style>
+            </style><style>
             .signuopform2 {
                         display: flex;
                         text-align: center;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-                        padding: 20px;
+                        padding: 20px 20px 10px;
+                        flex:1;
                         background-color: #2B2C2E;
                     }
                     .signuopform2 > h2 {
@@ -1216,12 +1227,19 @@ margin-bottom: 0;}
                         padding: 8px 12px;
                         margin-right: 4px;
                         border-radius: 4px;
+                        font-family: "nirmala";
                         
                     }
                     .signup3 .submit-btn {
                         width: 35%;
                     }
                 </style>
+    <div class="signup3">
+        <div class="image-wrapper">
+            <img src="https://greenstockreport.ca/wp-content/uploads/2018/11/lp/leftemail.png" alt="">
+        </div>
+
+        
         <form class="signuopform2 validate" action="https://greenstockreport.us19.list-manage.com/subscribe/post?u=79e5b7f2e13886ce4399d688f&amp;id=2bb0e61666"
             method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
             <h2>
@@ -1412,7 +1430,7 @@ margin-bottom: 0;}
             <h2>
                 DON'T SWEAT VALUATION
             </h2>
-            <h3>
+            <h3 class="lightgreen">
                 EXPECTATIONS FOR CANNABIS STOCKS ARE RUNNING HIGH. INVESTORS ARE
                 VERY EXCITED ABOUT THIS OPPORTUNITY.
             </h3>
@@ -1422,7 +1440,7 @@ margin-bottom: 0;}
                 valuations as unsustainable. Don't let this criticism prevent you from seeing the big picture
                 opportunity.
             </p>
-            <h3>
+            <h3 class="lightgreen">
                 THATʼS ANOTHER REASON WHY CHEMESIS (CSE: CSI / OTC: CADMF) IS A
                 MUST-ADD TO YOUR WATCH LIST.
             </h3>
@@ -1431,6 +1449,10 @@ margin-bottom: 0;}
     <div class="shape-image no-margin">
         <img src="https://greenstockreport.ca/wp-content/uploads/2018/11/lp/Image6.jpg" alt="">
         <style>
+            .important-thing>.content h3.lightgreen {
+                color: #97B79C;
+                font-family: "nirmala bold";
+            }
             .mobile {
                     display: none;
                 }
@@ -1558,13 +1580,21 @@ margin-bottom: 0;}
 
             .icon {
                 background-color: #0a5736;
-                width: 20%;
-                max-width: 60px;
+                width: 60px;
                 padding: 20px 20px 20px 80px;
                 display: flex;
                 align-items: center;
+                box-sizing: content-box;
             }
+            #mc-embedded-subscribe {
 
+            }
+           .chart > .title > .text > h2 {
+               color:#fff;
+           }
+           .signuopform2 > p {
+               max-width: 800px;
+           }
             .title>.text {
                 color: #fff;
                 margin-left: 10px;
@@ -1615,16 +1645,13 @@ margin-bottom: 0;}
         <h2>
             THIS INCREDIBLE OPPORTUNITY HASN'T GONE UNNOTICED.
         </h2>
-        <h3>
+        <p>
             Investors now clamor for marijuana stocks like Chemesis (CSE: CSI / OTC: CADMF).
-        </h3>
+        </p>
         <h3>
             CANNABIS STOCKS IN NORTH AMERICA HAVE BEEN AMONG THE MOST HEAVILY TRADED
             SECURITIES THIS YEAR, AND THAT HELPED CHEMESIS (CSE: CSI / OTC: CADMF) HIT THAT
             402% SHARE VALUE INCREASE IN JUST 60 DAYS.
-        </h3>
-        <h3>
-            (CTA Box, Links to online brokers and Disclaimer TBD.)
         </h3>
         <p>
             (1) Fool.com<br>
@@ -1753,6 +1780,15 @@ margin-bottom: 0;}
         .showup {
             transform: translateX(0);
         }
+        .black-block > h2 {
+                color: #fff;
+            }
+           .important-things > div:nth-child(8) > div.content > h3 > span {
+               font-family: 'nirmala bold';
+           }
+           .lightcolor .name>span, .lightcolor .email>span {
+               font-size: 12px;
+           }
     </style>
 
 
@@ -1760,7 +1796,12 @@ margin-bottom: 0;}
     /* This is for mobile */
         
         @media screen and (max-width: 960px) {
-            
+            white-block > h2 {
+                color: #fff;
+            }
+             div:nth-child(8) > div.content > h2 {
+                 color: #fff;
+             }
             .lightbox {
                 transform: translateX(0) translateY(100%); 
                 width: 100%;
@@ -1773,15 +1814,18 @@ margin-bottom: 0;}
 
             .important-thing>.content p {
                 padding: 0 20px;
+                line-height: 1.2;
+                text-align: left;
             }
             p {
                 text-align: justify;
             }
             .important-thing>.flex>.image-wrapper {
-            margin: 30px auto 10px;
+            margin: 10px auto 10px;
         }
             .signuopform2 > p {
-                margin: 30px auto;
+                margin: 10px auto;
+                line-height: 1.2;
             }
             .mobile {
                 display: block;
@@ -1794,7 +1838,7 @@ margin-bottom: 0;}
             }
 
             .masthead-logo {
-                height: 40vh;
+                height: 30vh;
             }
 
             .masthead-logo>.image-wrapper {
@@ -1814,6 +1858,7 @@ margin-bottom: 0;}
 
             .greenblock>.image-wrapper {
                 width: 20%
+                padding: 4%;
             }
 
             .greenblock>.title>p>span {
@@ -1822,8 +1867,10 @@ margin-bottom: 0;}
 
             .things {
                 font-size: 24px;
-                padding: 20px 20px 60px;
+                padding: 20px 20px 40px;
                 font-family: 'nirmala bold';
+                line-height: 1.1;
+                font-size: 20px;
             }
 
             .things>span {
@@ -1877,7 +1924,7 @@ margin-bottom: 0;}
 
             .prompt>.image-wrapper {
                 padding: 0;
-                width: 40%;
+                width: 35%;
             }
 
             .prompt::after {
@@ -1893,8 +1940,11 @@ margin-bottom: 0;}
 
             .prompt-mobile {
                 padding-top: 40px;
-                padding-bottom: 0;
+                padding-bottom: 10px;
                 display: block;
+            }
+            .halfhalf>.text>h2 {
+                margin-left: 40px;
             }
 
             .prompt-mobile>h2 {
@@ -1921,11 +1971,11 @@ margin-bottom: 0;}
 
             .halfhalf>.text {
                 position: relative;
-                top: -80px;
+                top: -40px;
                 z-index: 20;
-                transform: skewY(9deg);
+                transform: skewY(10deg);
                 background-color: #fff;
-                padding: 50px 0;
+                padding: 40px 0;
             }
 
             .halfhalf>.text>h2 {
@@ -1954,17 +2004,19 @@ margin-bottom: 0;}
 
             .bottomright {
                 width: 50%;
-                right: 8%;
-                top:55%;
+                right: 9%;
+                top: 56%;
             }
 
             .signupform>label {
-                margin-bottom: 4px;
-                font-size: 14px;
+                margin-bottom: 10px;
+                font-size: 10px;
+                font-family: 'nirmala';
             }
 
             .signupform>label>input {
                 height: 20px;
+                margin: 10px 0 0;
             }
 
             .submit-btn {
@@ -2040,7 +2092,7 @@ margin-bottom: 0;}
             }
 
             .content b {
-                font-size: 18px;
+                font-size: 16px;
             }
 
             img.round-arrow {
@@ -2048,20 +2100,20 @@ margin-bottom: 0;}
             }
 
             .important-thing>.content h2 {
-                font-size: 24px;
+                font-size: 20px;
                 text-align: center;
                 padding: 80px 20px 0px;
             }
 
             img.top-right {
-                top: 170px;
+                top: 110px;
                 left: 65%;
             }
 
             .important-things>div:nth-child(5) {
                 padding-top: 0;
                 background-color: #63b044;
-                border-top: 80px solid #0a5736;
+                border-top: 60px solid #0a5736;
                 color: #ffffff;
             }
 
@@ -2083,12 +2135,13 @@ margin-bottom: 0;}
             }
 
             .important-thing.light-green {
-                /* border-top: 80px solid #2A5E39; */
+                border-bottom: 20px solid #fff;
             }
 
             .important-thing.light-green>.content.flex>.text>h2 {
                 background-color: #2A5E39;
                 padding-bottom: 60px;
+                padding-top: 40px;
             }
 
             .important-thing.light-green>.image-wrapper {
@@ -2109,13 +2162,15 @@ margin-bottom: 0;}
                 font-size: 18px;
                 font-family: 'nirmala';
                 font-weight: 100;
+                margin-bottom: 20px;
             }
+            
 
             .important-things>div:nth-child(8) {
                 background-color: #2B2C2E;
                 color: #fff;
             }
-
+            
             .important-thing.gray>div.content>h2,
             .dark-green>.yellow-green>h2,
             div:nth-child(8)>div.content>h2 {
@@ -2135,7 +2190,8 @@ margin-bottom: 0;}
             }
 
             .quote {
-                height: 40vh;
+                height: 30vh;
+                /* background-image: url(); */
             }
 
             .quote-block {
@@ -2143,28 +2199,36 @@ margin-bottom: 0;}
                 padding: 10px 20px;
                 width: 86%;
             }
+            .quote-block >h2 {
+                font-size: 19px;
+            }
 
             div:nth-child(11)>.content>h2 {
                 padding-top: 0;
             }
 
             .green-text-block {
-                position: static;
+                /* position: static;
                 width: 100%;
                 padding: 20px;
                 box-sizing: border-box;
-                font-size: 20px;
+                font-size: 16px; */
+                bottom: 5%;
+                width: 90%;
+                padding: 10px 20px;
+                box-sizing: border-box;
+                font-size: 12px;
             }
 
             .green-textblock {
-                width: 100%;
+                width: 94%;
                 bottom: -45px;
-                left: 0;
+                left: 3%;
             }
 
             .year,
             .desc {
-                font-size: 16px;
+                font-size: 14px;
                 padding: 10px;
             }
 
@@ -2172,13 +2236,13 @@ margin-bottom: 0;}
                 padding: 10px 20px;
             }
 
-            div.important-things>div:nth-child(18)>.image-wrapper {
+            /* div.important-things>div:nth-child(18)>.image-wrapper {
                 position: relative;
                 top: 50px;
-            }
+            } */
 
             div:nth-child(18)>div.content>h2 {
-                padding-top: 40px;
+                padding-top: 0px;
             }
 
             div:nth-child(18)>div.content>h3,
@@ -2243,7 +2307,7 @@ margin-bottom: 0;}
 
             .signup4>.image-wrapper {
                 font-size: 0;
-                width: 20%;
+                /* width: 20%; */
             }
             .lightcolor {
                 background-color: #63b044;
@@ -2257,6 +2321,7 @@ margin-bottom: 0;}
             }
             .signuopform2 .submit-btn {
                 width: 35%;
+                max-width: 300px;
             }
             .signup4 img {
                 height: 100%;
@@ -2264,6 +2329,7 @@ margin-bottom: 0;}
             @media screen and (max-width: 960px) {
                 div.prompt > div.content > h2:nth-child(1) {
                     color: #fff;
+                    font-size: 19px;
                 }
                 .signup3 > .image-wrapper, .signup4 > .image-wrapper{
                     display: none;
@@ -2277,7 +2343,8 @@ margin-bottom: 0;}
                     flex-direction: column;
                 }
                 .signup3 .submit-btn, .signup4 .submit-btn  {
-                    width: 60%;
+                    width: 40%;
+                    padding: 8px;
                 }
                 .name, .email {
                     width: 100%;
@@ -2321,18 +2388,231 @@ margin-bottom: 0;}
 </div>
 <style>
     .greenblock>.title>p {
-    font-family: 'nirmala';
-}
-.greenblock>.title>p>span {
-    font-family: 'nirmala bold';
-}
-.things {
-    font-family: 'nirmala bold';
-    text-align: center;
-}
-.otc .content>h3, .otc .content>p {
-    text-align: justify;
-}
+        font-family: 'nirmala bold';
+    }
+
+    .greenblock>.title>p>span {
+        font-family: 'nirmala bold';
+    }
+
+    .things {
+        font-family: 'nirmala bold';
+        text-align: center;
+    }
+
+    .otc .content>h3,
+    .otc .content>p {
+        text-align: justify;
+    }
+
+    @media screen and (max-width: 980px){
+        .otc .content>h3, .otc .content>p {
+            text-align: left;
+            line-height: 1.2;
+        }
+        div.otc > div.left > div.content > h3:nth-child(4) {
+            display: flex;
+            margin: 0 auto;
+            width: 80%;
+        }
+        div.otc > div.left > div.content > h3:nth-child(4)>img {
+            padding-right: 8px;
+            height: 100%;
+        }
+        .otc {
+            margin-bottom: 10px;
+        }
+        .historical-data>.detail {
+            background-color: transparent;
+        }
+        .historical-data .title {
+            background-color: rgba(255,255,255,.5);
+            font-size: 20px;
+            
+        }
+        div.historical-data > div.detail > div > h3 > p {
+            line-height: 1.2;
+        }
+        .historical-data .content p {
+            line-height: 1.2;
+        }
+        .why-block>.context {
+            margin-top: 10px;
+        }
+        .historical-data h3 {
+            margin-bottom: 0px;
+        }
+        .historical-data > div.detail > div > div > div > h4 {
+            font-size: 16px;
+        }
+        .age-data {
+            line-height: 1.2;
+            margin: 30px 0 0px;
+        }
+        .header-title {
+            font-size: 20px;
+            line-height: 1.2;
+        }
+        .shape-image {
+            margin-top: 20px;
+        }
+        .otc>.left>.image-wrapper {
+            margin-bottom: 20px;
+        }
+        #position {
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
+        .important-thing>.content p {
+            font-family: "nirmala";
+            line-height: 1.2;
+        }
+        .important-thing.light-green > div.content.flex > div.text > p:nth-child(4) > strong,
+        .important-thing.light-green > div.content.flex > div.text > h3 {
+            font-size: 16px;
+            font-family: 'nirmala bold';
+        }
+        .name>span, .email>span {
+            padding: 1px 12px;
+            font-size: 12px;
+        }
+        .signuopform2 > h2 {
+            margin-bottom: 0;
+            font-size: 20px;
+        }
+        input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
+            height: 22px;
+            padding: 4px 6px;
+        }
+
+
+
+        .important-things > div:nth-child(10) {
+            background-color: #2b2c2e;
+            border-top: 20px solid white;
+        }
+
+        .important-things > div:nth-child(10) > div.content > p {
+            color: #ffffff;
+        }
+
+        .important-things > div:nth-child(10) > div.content > h2 {
+            padding-top: 4px;
+            color: white;
+        }
+         div.important-things > div:nth-child(10) > div.content > h3 {
+             font-size: 13px;
+             padding: 0 20px;
+         }
+         div.important-things > div:nth-child(10) > div.content > h3 > span {
+            font-family: 'nirmala bold';
+         }
+
+
+         .important-things > div:nth-child(13) {
+            margin-top: 20px;
+            background-color: #0a5736;
+         }
+         div.important-things > div:nth-child(13) > div.content > h2 {
+             padding-top: 0;
+         }
+         .important-things > div:nth-child(13) > div.content > h3 {
+            padding: 0 20px;
+            font-family: "nirmala bold";
+            font-size: 14px;
+            color: #fff;
+            margin-bottom: 15px;
+         }
+         .important-things > div:nth-child(13) > div.content > h3 > span {
+            font-family: "nirmala bold";
+            color: #fff;
+         }
+         .important-things > div:nth-child(13) > div.content > p {
+             color: #fff;
+         }
+         div.otc > div.left > div.content > h3:nth-child(4) > div > img{
+             padding-right: 10px;
+         }
+         .important-things > div.important-thing.gray > div.content > h2 {
+             padding-top: 0;
+         }
+         .important-things > div.important-thing.gray {
+             background-color: #2b2c2e;
+         }
+         .important-things > div.important-thing.gray > div.content > p {
+             color: #fff;
+         }
+         .important-things > div.important-thing.gray > div.content > h3 {
+            font-size: 14px;
+            color: #fff;
+            font-family: "nirmala bold";
+            margin-bottom: 0;
+         }
+         .important-thing>.content h3.lightgreen {
+             font-size: 14px;
+         }
+         div.important-things > div:nth-child(18) {
+             padding-bottom: 0;
+         }
+
+         .important-things > div:nth-child(20) {
+            margin-top: 60px;
+            background-color: #0a5736;
+         }
+         .important-things > div:nth-child(20) > div.content > h2 {
+            padding-top: 0;
+         }
+         .important-things > div:nth-child(20) > div.content > h3, .important-things > div:nth-child(20) > div.content > h4{
+             padding: 0 20px;
+             color: #fff;
+             font-size: 14px;
+             font-family: "nirmala bold";
+         }
+         .important-things > div:nth-child(20) > div.content > h3 > span {
+             font-size: 14px;
+             font-family: "nirmala bold";
+             color: #fff;
+         }
+         .important-things > div:nth-child(20) > div.content > p {
+             color: #fff;
+         }
+         .important-things > div:nth-child(20) > div.content > h2 {
+             color: #fff;
+         } 
+         .black-block > h2 {
+             margin-bottom: 0;
+         }
+         .black-block {
+            padding: 20px 20px 20px;
+         }
+         .white-block {
+            padding: 0 20px 20px 20px;
+         }
+         .white-block  > h2 {
+             margin-bottom: 0;
+         }
+         .black-block > h2, .white-block > h2 {
+             color: #fff;
+             font-size: 15px;
+         }
+         .important-things > div.chart > div.title > div.text > h2 {
+            font-size: 20px;
+            margin-bottom: 0;
+            padding: 10px 0;
+         }
+         .claim > h2  {
+             font-size: 20px;
+         }
+         .claim>h3 {
+             font-size: 14px;
+         }
+         .claim>* {
+             line-height: 1.2;
+         }
+         .why-block>.context {
+             margin-left: 0;
+         }
+    }
 </style>
 <script defer>
     var popupBlock = document.querySelector('.lightbox');
@@ -2373,6 +2653,6 @@ margin-bottom: 0;}
     function setThingsPosition() {
         var greenblock = document.querySelector('.greenblock')
         var things = document.querySelector('.things')
-        things.style.paddingTop = greenblock.offsetHeight - 30 + 'px'
+        things.style.paddingTop = greenblock.offsetHeight - 40 + 'px'
     }
 </script>
