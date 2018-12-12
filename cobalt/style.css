@@ -1,0 +1,186 @@
+/* This is for reset purpose */
+.content-container * {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    font-family: poppins;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* margins */
+
+*.margin20 {
+    margin-bottom: 20px;
+}
+
+*.margin30 {
+    margin-bottom: 30px;
+}
+
+/* paddings */
+.left-padding {
+    padding-left: 20px
+}
+
+/* padding left for few items */
+.reason-title,
+.header-title,
+.profile-title,
+.excerpt,
+.regular-image,
+.regular-content {
+    line-height: 1.5;
+    padding-left: 20px;
+}
+
+
+/* All font size, color, style goes here */
+
+/* title for header */
+.header-title {
+    font-size: 35px;
+}
+
+h2.profile-title {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+p.regular-content {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #707070;
+}
+
+.excerpt,
+.emphasize {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+
+.content-container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+
+.main-content {
+    width: 632px;
+}
+
+.side-content {
+    background-color: #e3e3e3;
+}
+
+/* Title Header */
+.title-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.title-header>.image-wrapper {
+    width: 300px;
+}
+
+/* hero image */
+.hero-image {
+    margin: 30px auto 40px;
+}
+
+.regular-image {
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.regular-image:nth-of-type(1)>img {
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #aaa;
+}
+
+.reasons-title {
+    margin: 30px 0 50px;
+    position: relative;
+    background-color: #062945;
+    display: flex;
+}
+
+.reasons-title>.image-wrapper {
+    background-color: #fff;
+}
+
+.right-arrow {
+    width: 20%;
+    position: absolute;
+    top: calc(100% - .1px);
+    right: 0;
+}
+
+.reasons-title-text {
+    width: calc(100% - 150px);
+    padding: 10px 40px;
+    color: #fff;
+    font-size: 34px;
+    line-height: 1.3;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.reasons-title-text>span {
+    color: #4DB348;
+}
+
+.reason-title {
+    margin: 20px 0;
+    position: relative;
+}
+
+.reason-title>img {
+    position: relative;
+    z-index: 1;
+}
+
+.reason-title>h3 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #062945;
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    line-height: 1.2;
+    width: 81%;
+}
+
+.reason-title>h3>span {
+    color: #4DB348;
+}
+
+div.excerpt {
+    color: #062945;
+}
+
+.emphasize {
+    margin-left: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-left: 9px solid #062945;
+}
+.video-container {
+    position: relative;
+}
+.youtube-embed {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
