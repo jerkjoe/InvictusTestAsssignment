@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>打卡</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="calendar">
+        <div class="title">
+            <h2 class="month"></h2>
+            <h2 class="year"></h2>
+        </div>
+        <ul class="dates">
+
+        </ul>
+    </div>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        .dates {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .dates>li {
+            width: 12%;
+            background-color: #e3e3e3;
+            padding: 30px 10px;
+            box-sizing: border-box;
+            border: 1px solid red;
+            margin: 1%;
+            text-align: center;
+        }
+    </style>
+    <script>
+        var dates = document.querySelector('.dates')
+        var year = document.querySelector('.year')
+        var month = document.querySelector('.month')
+
+        var daysInMonth = [
+            31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31
+        ]
+        var currentYear = new Date().getFullYear()
+        var currentMonth = new Date().getMonth()
+
+        year.innerText = currentYear
+        month.innerText = showMonth(currentMonth)
+
+        function showMonth(num) {
+            switch (num) {
+                case 0:
+                    return 'Jan'
+                case 1:
+                    return 'Feb'
+                case 2:
+                    return 'Mar'
+                case 3:
+                    return 'Apr'
+                case 4:
+                    return 'May'
+                case 5:
+                    return 'Jun'
+                case 6:
+                    return 'Jul'
+                case 7:
+                    return 'Aug'
+                case 8:
+                    return 'Sep'
+                case 9:
+                    return 'Oct'
+                case 10:
+                    return 'Nov'
+                case 11:
+                    return 'Dec'
+            }
+        }
+
+        var list = createDayElement(createDates(currentYear, currentMonth))
+
+        updateCalendar()
+
+        function updateCalendar() {
+            list.forEach(e => {
+                dates.appendChild(e)
+            })
+        }
+
+        function createDates(year, month) {
+            var totalDays = 0
+            var dayStartOfTheMonth = new Date(year, month, 1).getDay()
+            if (month === 1) {
+                if (year % 4 === 0 && year % 100 !== 0 || year % 400 === 0) {
+                    totalDays = daysInMonth[1] + 1
+                } else {
+                    totalDays = daysInMonth[1]
+                }
+            } else {
+                totalDays = daysInMonth[month]
+            }
+            return {
+                totalDays: totalDays,
+                startDay: dayStartOfTheMonth
+            }
+        }
+
+        function createDayElement(obj) {
+            var listOfDayElements = []
+            for (var i = 0; i < obj.startDay; i++) {
+                listOfDayElements.push(document.createElement('li'))
+            }
+            for (var j = 0; j < obj.totalDays; j++) {
+                var li = document.createElement('li')
+                li.innerText = j + 1
+                listOfDayElements.push(li)
+            }
+            return listOfDayElements
+        }
+
+
+        document.body.onload = function () {
+            var currentDate = new Date().getMonth()
+            console.log(currentDate)
+        }
+    </script>
+</body>
+
+</html>

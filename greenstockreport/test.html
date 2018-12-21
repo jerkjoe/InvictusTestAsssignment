@@ -1,0 +1,80 @@
+<script defer>
+        // var allReasons = document.querySelectorAll('section.reason')
+        // // var sections = document.querySelectorAll('.twothirds>.wpb_wrapper>*')
+        var sections = document.querySelectorAll('.left-sections>*')
+        var sidebar = document.querySelector('.right-sections')
+        console.log(sections)
+        document.addEventListener('scroll', throttle(handleScroll, 16))
+    
+    
+    
+        // scroll
+        function handleScroll() {
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop
+            sections.forEach(function (e) {
+                var absTop = getAbsOffsetTop(e)
+                if (scrollTop + window.innerHeight - 300 > absTop) {
+                    if (!e.className.includes('visible')) {
+                        e.className = e.className + ' visible'
+                    }
+                }
+                var element = document.querySelector('main > div.left-sections > section:nth-child(6)')
+                var endElement = document.querySelector('div.left-sections > section.causes')
+                if(scrollTop > getAbsOffsetTop(element) && scrollTop < (getAbsOffsetTop(endElement) + 800)) {
+                    document.querySelector('div.sidesub.show-on-desktop').classList.add('sticky-me')
+                }
+                else {
+                    document.querySelector('div.sidesub.show-on-desktop').classList.remove('sticky-me')
+                }
+            })
+        }
+    
+        // offset top to abs top
+        function getAbsOffsetTop(element) {
+            var offsetTop = element.offsetTop
+            while (element.prentNode) {
+                console.log(parentNode)
+                offsetTop += element.parentNode.offsetTop
+            }
+            return offsetTop
+        }
+    
+        // throttle
+        function throttle(fn, time) {
+            var timer = null
+            return function () {
+                clearTimeout(timer)
+                timer = setTimeout(function () {
+                    fn()
+                }, time)
+            }
+        }
+    
+    
+        setTimeout(function () {
+            document.querySelector('.profile-wrapper').style.height =
+                profile.offsetHeight + 'px'
+            window.scroll(0, 1)
+            sidebar.className += ' visible'
+        }, 1500)
+        var profile = document.getElementById('profile')
+        window.addEventListener('resize', function () {
+            document.querySelector('.profile-wrapper').style.height = profile.offsetHeight + 'px'
+            console.log('Hiiiiiii')
+        })
+    </script>
+    <style>
+        div.sidesub.sticky-me {
+            position: fixed;
+            top: 80px;
+            max-width: 312px;
+        }
+
+        @media screen and (max-width:480px) {
+            div.sidesub.sticky-me {
+            position: relative;
+            top: 0px;
+            max-width: 100%;
+        }
+        }
+    </style>
