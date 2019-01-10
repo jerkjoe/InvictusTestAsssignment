@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -341,4 +341,23 @@
             }
         </style>
     </body>
-</html>
+</html> -->
+
+<form id="form" >
+    <input type="text" name="item" />
+    <input type="submit" value="Add">
+</form>
+
+<script>
+    const items = []
+
+    document.getElementById('form').addEventListener('submit', function(e){
+        e.preventDefault()
+        submitCheck()
+    })
+    function submitCheck() {
+        
+        var last = document.getElementsByTagName('input')[0].value
+        console.log(last)
+    }
+</script>
