@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-card',
@@ -9,6 +10,10 @@ export class CardComponent implements OnInit {
 
   constructor() { }
 
+  @Input() post: {title: string, content: string, imageUrl: string, username:string}
+  
+  
+  
   ngOnInit() {
   }
 
